@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Výlety | PESCEZLES</title>
+    <meta name="description" content="Tipy na výlet so psom. Tajná rajská záhrada, Majdán okruh a mnohé iné.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        pes: { 50: '#faf7f2', 100: '#f5ecd8', 200: '#e5d7ba' }, // Bezova tepla
+                        cez: { 500: '#ef4444', 600: '#dc2626', 700: '#b91c1c' }, // Cervena
+                        les: { 500: '#0b6159', 600: '#09504a', 700: '#073f3a', 800: '#05302c', 900: '#04221f', 950: '#021513' } // Temna zelena namiesto ciernej
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-pes-50 text-les-950 font-sans antialiased">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white border-b border-pes-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="block h-10 w-auto">
+                        <img src="./images/pescezles-500x91-1.png" alt="PESCEZLES" class="h-full w-auto object-contain">
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="vylety.html" class="text-sm font-bold uppercase tracking-wider text-les-600 transition-colors">Výlety</a>
+                    <a href="pomoc.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Pomoc</a>
+                    <a href="misia.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Misia</a>
+                    <a href="kniha.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Kniha</a>
+                    <a href="blog.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="pt-32 pb-16 bg-les-950 overflow-hidden relative">
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-black mb-4">Tipy na výlet so psom</h1>
+            <p class="text-pes-50 max-w-2xl mx-auto text-lg">Inšpiruj sa a pozri si naše obľúbené trasy a offline dobrodružstvá po celom Slovensku.</p>
+        </div>
+        <!-- Decorative bg -->
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full bg-les-900 opacity-40"></div>
+            <!-- Example of empty placeholder background instead of an image if you dont have one loaded -->
+            <div class="absolute inset-0 bg-les-600/10 backdrop-blur-3xl"></div>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <main class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid lg:grid-cols-3 gap-10">
+            
+            <!-- Trip 1 -->
+            <article class="bg-white rounded-3xl p-8 border border-pes-100 shadow-xl hover:-translate-y-1 transition-transform flex flex-col">
+                <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden mb-6 bg-pes-50 flex items-center justify-center">
+                    <img src="./images/1-4-600x400.webp" onerror="this.src='./images/1-4.webp'" alt="Tajná rajská záhrada" class="w-full h-full object-cover">
+                </div>
+                <span class="text-xs font-bold text-les-600 uppercase tracking-widest mb-2 block">Trnava okolie / Západné Slovensko</span>
+                <h2 class="text-2xl font-black text-les-950 mb-4 group-hover:text-cez-600 transition-colors">Tajná rajská záhrada (Dobrá Voda)</h2>
+                <p class="text-les-800 mb-8 leading-relaxed flex-grow">
+                    Toto čarovné miesto sme objavili „zhodou náhod“. Túlali sme sa po náhodnej lesnej ceste, až sme natrafili na skrytú oázu pokoja.
+                </p>
+                <a href="#" class="inline-flex items-center font-bold text-les-950 border-b-2 border-les-900 w-max pb-1">
+                    PREČÍTAŤ
+                </a>
+            </article>
+
+            <!-- Trip 2 -->
+            <article class="bg-white rounded-3xl p-8 border border-pes-100 shadow-xl hover:-translate-y-1 transition-transform flex flex-col">
+                <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden mb-6 bg-pes-50 flex items-center justify-center">
+                    <img src="./images/2-5-600x400.webp" onerror="this.src='./images/2-5.webp'" alt="Majdán okruh" class="w-full h-full object-cover">
+                </div>
+                <span class="text-xs font-bold text-les-600 uppercase tracking-widest mb-2 block">Trnava okolie / Západné Slovensko</span>
+                <h2 class="text-2xl font-black text-les-950 mb-4 group-hover:text-cez-600 transition-colors">Majdán okruh (Horné Orešany)</h2>
+                <p class="text-les-800 mb-8 leading-relaxed flex-grow">
+                    Nenáročný 10km okruh po asfaltovej ceste v krásnom lesnom prostredí so žblnkotajúcim potôčikom, ktorý vedie pozdĺž celej trasy.
+                </p>
+                <a href="#" class="inline-flex items-center font-bold text-les-950 border-b-2 border-les-900 w-max pb-1">
+                    PREČÍTAŤ
+                </a>
+            </article>
+            
+            <!-- Trip 3 -->
+            <article class="bg-white rounded-3xl p-8 border border-pes-100 shadow-xl hover:-translate-y-1 transition-transform flex flex-col">
+                <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden mb-6 bg-pes-50 flex items-center justify-center">
+                    <img src="./images/3-3-600x400.webp" onerror="this.src='./images/3-3.webp'" alt="Prekážka" class="w-full h-full object-cover">
+                </div>
+                <span class="text-xs font-bold text-les-600 uppercase tracking-widest mb-2 block">Malé Karpaty / Trnava okolie</span>
+                <h2 class="text-2xl font-black text-les-950 mb-4 group-hover:text-cez-600 transition-colors">Prekážka (Naháč)</h2>
+                <p class="text-les-800 mb-8 leading-relaxed flex-grow">
+                    Krásna prechádzka k historickej lokalite a technickej pamiatke uprostred malebnej prírody Malých Karpát. Zvládne to úplne každý pes.
+                </p>
+                <a href="#" class="inline-flex items-center font-bold text-les-950 border-b-2 border-les-900 w-max pb-1">
+                    PREČÍTAŤ
+                </a>
+            </article>
+            
+        </div>
+        
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-les-950 pt-20 pb-8 text-white relative mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
+                <!-- Branding -->
+                <div class="lg:col-span-4">
+                    <span class="font-black text-3xl tracking-tighter text-white mb-6 block">PESCEZLES<span class="text-pes-200">.</span></span>
+                    <p class="text-pes-200 leading-relaxed mb-8">
+                        Uvítame akúkoľvek pomoc, zdieľanie, správu, odporučenie, kontakt, finančnú, materiálnu alebo duševnú a fyzickú podporu. Ďakujeme vám za pomoc pri našej misii.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/pescezles/" class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center hover:bg-cez-600 transition-all"><span class="font-bold text-sm">IG</span></a>
+                        <a href="https://www.facebook.com/pescezles" class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center hover:bg-cez-600 transition-all"><span class="font-bold text-sm">FB</span></a>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 lg:col-start-7">
+                     <h4 class="font-bold text-lg mb-6 text-white uppercase tracking-wider">Navigácia</h4>
+                     <ul class="space-y-3">
+                         <li><a href="vylety.html" class="text-pes-100 hover:text-white transition-transform">Výlety</a></li>
+                         <li><a href="pomoc.html" class="text-pes-100 hover:text-white transition-transform">Pomoc</a></li>
+                         <li><a href="misia.html" class="text-pes-100 hover:text-white transition-transform">Misia</a></li>
+                         <li><a href="kniha.html" class="text-pes-100 hover:text-white transition-transform">Kniha</a></li>
+                         <li><a href="blog.html" class="text-pes-100 hover:text-white transition-transform">Blog</a></li>
+                     </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="lg:col-span-4">
+                    <h4 class="font-bold text-lg mb-6 text-white uppercase tracking-wider">Kontaktujte nás</h4>
+                    <a href="mailto:spolupraca@pescezles.sk" class="inline-flex items-center space-x-3 text-pes-100 hover:text-pes-200 font-bold bg-white/5 py-4 px-6 rounded-xl border border-white/20">
+                        <span>spolupraca@pescezles.sk</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-pes-200/20 pt-8 flex text-sm text-pes-100 font-medium mt-12 justify-between">
+                <p>&copy; 2026 PESCEZLES.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

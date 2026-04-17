@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="sk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomoc | PESCEZLES</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] }, colors: {
+                        pes: { 50: '#faf7f2', 100: '#f5ecd8', 200: '#e5d7ba' }, // Bezova tepla
+                        cez: { 500: '#ef4444', 600: '#dc2626', 700: '#b91c1c' }, // Cervena
+                        les: { 500: '#0b6159', 600: '#09504a', 700: '#073f3a', 800: '#05302c', 900: '#04221f', 950: '#021513' } // Temna zelena namiesto ciernej
+                    } } } }
+    </script>
+</head>
+<body class="bg-pes-50 text-les-950 font-sans antialiased">
+    
+    <nav class="fixed w-full z-50 bg-white border-b border-pes-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="block h-10 w-auto">
+                        <img src="./images/pescezles-500x91-1.png" alt="PESCEZLES" class="h-full w-auto object-contain">
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="vylety.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Výlety</a>
+                    <a href="pomoc.html" class="text-sm font-bold uppercase tracking-wider text-les-600 transition-colors">Pomoc</a>
+                    <a href="misia.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Misia</a>
+                    <a href="kniha.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Kniha</a>
+                    <a href="blog.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-20 bg-les-950 overflow-hidden relative">
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <span class="inline-block py-2 px-4 rounded-full border border-les-500 text-pes-200 font-bold mb-6 tracking-widest text-sm uppercase">Pridaj sa k iniciatíve</span>
+            <h1 class="text-4xl md:text-6xl font-black mb-6 uppercase tracking-tight">Transparentný účet</h1>
+            <p class="text-pes-50 max-w-3xl mx-auto text-xl font-medium leading-relaxed">
+                V roku 2022 sme založili transparentný účet, z ktorého neustále pomáhame zvieratám v núdzi. Ak chceš prispieť na dobrú vec a nevieš komu, šupni to nám – skončí to v dobrých rukách.
+            </p>
+        </div>
+        <div class="absolute inset-0 z-0 opacity-20 bg-[url('./images/1.webp')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 z-0 bg-les-950/80"></div>
+    </header>
+
+    <main class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <div class="bg-white p-10 md:p-14 rounded-3xl shadow-xl border border-nature-100 relative top--10">
+                <h2 class="text-3xl font-black mb-6 text-les-950">Vytvor si trvalý príkaz aspoň na 1€ a pridaj sa k našej iniciatíve!</h2>
+                <p class="text-les-800 mb-8 text-lg">Je tam s nami už takmer 100 úžasných ľudí.</p>
+                
+                <!-- IBAN field and Copy Button -->
+                <div class="bg-pes-50 border border-pes-200 rounded-2xl p-4 md:p-6 mb-8 max-w-xl mx-auto flex flex-col items-center">
+                    <span class="text-xs uppercase tracking-widest text-les-700 font-bold mb-2">Číslo transparentného účtu (IBAN)</span>
+                    <div class="flex items-center w-full max-w-md bg-white rounded-xl overflow-hidden shadow-sm border border-pes-200">
+                        <input type="text" id="ibanToCopy" value="SK5883300000002002203791" readonly class="w-full text-center py-3 md:py-4 px-4 font-mono font-bold text-les-950 bg-transparent outline-none focus:bg-pes-50">
+                        <button onclick="navigator.clipboard.writeText(document.getElementById('ibanToCopy').value).then(() => {let b = this; let t = b.innerText; b.innerText='Skopírované!'; b.classList.add('bg-nature-600', 'text-white'); setTimeout(()=>{b.innerText=t; b.classList.remove('bg-nature-600', 'text-white')}, 2000)})" 
+                                class="px-5 md:px-6 py-3 md:py-4 bg-pes-100 hover:bg-gray-200 text-les-900 font-bold uppercase text-sm border-l border-pes-200 transition-colors">
+                            Kopírovať
+                        </button>
+                    </div>
+                </div>
+
+                <a href="https://ib.fio.sk/ib/transparent?a=2002203791" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-full sm:w-auto py-5 px-10 bg-cez-600 hover:bg-cez-700 shadow-xl text-white font-black rounded-full text-lg transition-transform transform hover:-translate-y-1">
+                    Prejsť na transparentný účet
+                </a>
+            </div>
+        </div>
+
+        <!-- Infinite photo strip -->
+        <div class="max-w-4xl mx-auto mb-6 overflow-hidden rounded-2xl">
+            <div class="flex gap-3 photo-strip">
+                <img src="./images/40-240x300.webp" alt="" class="h-48 w-auto rounded-xl object-cover flex-shrink-0">
+                <img src="./images/53-240x300.webp" alt="" class="h-48 w-auto rounded-xl object-cover flex-shrink-0">
+                <img src="./images/42-240x300.webp" alt="" class="h-48 w-auto rounded-xl object-cover flex-shrink-0">
+                <img src="./images/41-240x300.webp" alt="" class="h-48 w-auto rounded-xl object-cover flex-shrink-0">
+                <img src="./images/39-240x300.webp" alt="" class="h-48 w-auto rounded-xl object-cover flex-shrink-0">
+                <img src="./images/38-240x300.webp" alt="" class="h-48 w-auto rounded-xl object-cover flex-shrink-0">
+                <img src="./images/37-240x300.webp" alt="" class="h-48 w-auto rounded-xl object-cover flex-shrink-0">
+                <!-- duplicate for seamless loop -->
+                <img src="./images/40-240x300.webp" alt="" class="h-48 w-auto rounded-xl object-cover flex-shrink-0">
+                <img src="./images/53-240x300.webp" alt="" class="h-48 w-auto rounded-xl object-cover flex-shrink-0">
+                <img src="./images/42-240x300.webp" alt="" class="h-48 w-auto rounded-xl object-cover flex-shrink-0">
+                <img src="./images/41-240x300.webp" alt="" class="h-48 w-auto rounded-xl object-cover flex-shrink-0">
+                <img src="./images/39-240x300.webp" alt="" class="h-48 w-auto rounded-xl object-cover flex-shrink-0">
+                <img src="./images/38-240x300.webp" alt="" class="h-48 w-auto rounded-xl object-cover flex-shrink-0">
+                <img src="./images/37-240x300.webp" alt="" class="h-48 w-auto rounded-xl object-cover flex-shrink-0">
+            </div>
+        </div>
+        <style>
+            .photo-strip {
+                animation: scroll-strip 20s linear infinite;
+                width: max-content;
+            }
+            @keyframes scroll-strip {
+                0%   { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+            }
+        </style>
+
+        <div class="max-w-4xl mx-auto mb-16">
+            <details class="bg-white rounded-2xl shadow-sm border border-pes-100 overflow-hidden group">
+                <summary class="p-6 font-bold cursor-pointer text-xl text-les-950 list-none flex justify-between items-center hover:bg-pes-50 transition-colors outline-none cursor-pointer">
+                    <span class="flex items-center"><span class="text-les-600 mr-3 text-2xl">★</span> Naše spoločné úspechy a záchranné misie</span>
+                    <span class="transform group-open:rotate-180 transition-transform text-les-600 text-2xl">▼</span>
+                </summary>
+                <div class="p-6 pt-0 border-t border-pes-100">
+                    <ul class=”space-y-6 text-les-900 text-lg mt-6”>
+                        <li class=”flex items-start”>
+                            <span class=”text-les-600 font-bold mr-4 text-xl mt-1”>✓</span>
+                            <div>
+                                <p class=”mb-2”><strong>Projekt Mňaučín:</strong> Záchrana 4 opustených mačičiek (Berta, Bela, Bejby a Beo). Pôvodne sme ich chceli dočasne umiestniť do stodoly vo Farmalande, no kvôli nedostatku financií na stavbu sa to nepodarilo. Mačičky tak skončili u nás, v dočasnej opatere sme sa o ne starali viac ako pol roka a následne si všetky úspešne našli nové rodiny!</p>
+                                <a href=”blog-mnaucin.html” class=”text-les-600 font-bold text-sm tracking-wide hover:underline inline-flex items-center”>Viac o tomto príbehu sa dočítaš v blogu ↗</a>
+                            </div>
+                        </li>
+                        <li class=”flex items-start”>
+                            <span class=”text-les-600 font-bold mr-4 text-xl mt-1”>✓</span>
+                            <p><strong>ZACHRÁNILI SME YBYHO, MÔJHO DRUHÉHO KOCÚRIKA</strong></p>
+                        </li>
+                        <li class=”flex items-start”>
+                            <span class=”text-les-600 font-bold mr-4 text-xl mt-1”>✓</span>
+                            <p>Zachránili sme kocúrika TURBA, ktorý plakal na našom sídlisku s otvorenou ranou a nikto si ho nevšímal.</p>
+                        </li>
+                        <li class=”flex items-start”>
+                            <span class=”text-les-600 font-bold mr-4 text-xl mt-1”>✓</span>
+                            <p>Prispeli sme na stavbu prístrešku pre koňe.</p>
+                        </li>
+                        <li class=”flex items-start”>
+                            <span class=”text-les-600 font-bold mr-4 text-xl mt-1”>✓</span>
+                            <p>Prispeli sme zranenej mačičke z Čadce.</p>
+                        </li>
+                        <li class=”flex items-start”>
+                            <span class=”text-les-600 font-bold mr-4 text-xl mt-1”>✓</span>
+                            <p>Zachránili sme 3 mačiatka a prispeli babám z OZ nechcene, ktoré zachraňujú zvieratá rôzneho typu :)</p>
+                        </li>
+                        <li class=”flex items-start”>
+                            <span class=”text-les-600 font-bold mr-4 text-xl mt-1”>✓</span>
+                            <p>Pomohli sme Slovenským študentom v Grécku pri záchrane <strong>SAKURY</strong>, ktorú sa im podarilo zachrániť.</p>
+                        </li>
+                        <li class=”flex items-start”>
+                            <span class=”text-les-600 font-bold mr-4 text-xl mt-1”>✓</span>
+                            <p>Prispeli sme na zbierky pre OZ Zverokruh, OZ mačacie šťastie, OZ očami psa, OZ mačičkovo, OZ Psy ulice OZ, UVP útulok Košice, Happy Farma, Mačičky zo Žiliny (uličníci) a iným…</p>
+                        </li>
+                        <li class=”flex items-start”>
+                            <span class=”text-les-600 font-bold mr-4 text-xl mt-1”>✓</span>
+                            <p>Iniciovali sme celoslovenskú kauzu týranej fenky <strong>FIFINKY</strong>, ktorú trýznil jej majiteľ, keď ju so sebou doslova ťahal po ceste SNP. Vďaka pár odvážnym ľuďom, ktorí na to upozornili sa ju podarilo zachrániť z najhoršieho. Polícia ani RVPS však proti tyranovi neurobila nič a fenka u neho zostala nadaľej. Našou spoločnou činnosťou a tlakom médií fenka zázrakom zmizla a majiteľ pár dní na to utrpel „zhodou náhod” smrteľné zranenie priamo na jeho vlastnom dvore pri rezaní dreva. Fenka je vraj v bezpečí a žije konečne spokojným životom.</p>
+                        </li>
+                        <li class=”flex items-start”>
+                            <span class=”text-les-600 font-bold mr-4 text-xl mt-1”>✓</span>
+                            <div>
+                                <p class=”mb-4”><strong>Týmto útulkom sme darovali 2 tony granúl</strong> po úspešnej ceste SNP. V spolupráci s <i>www.slovenskegranule.sk</i>:</p>
+                                <p class=”text-sm text-les-700 font-medium leading-relaxed”>
+                                    1. OZ Záchranný koráb, Šaštín<br>
+                                    2. Útulok, Skalica<br>
+                                    3. OZ Pes a mačka v ohrození, Kremnica<br>
+                                    4. OZ Karanténna stanica, Zvolen<br>
+                                    5. OZ Túlavá labka, Banská Štiavnica<br>
+                                    6. OZ Zvieratá v núdzi, Nemecká<br>
+                                    7. Útulok Tuláčik, Brezno<br>
+                                    8. OZ Dočasný domov pre havinkov, Piešťany<br>
+                                    9. OZ Topoľčianske packy, Topoľčany<br>
+                                    10. OZ Dog Azyl, Veľký Meder<br>
+                                    11. OZ Druhá šanca, Bardejov<br>
+                                    12. OZ Prešovskí havkáči, Prešov<br>
+                                    13. Útulok, Kežmarok<br>
+                                    14. OZ Na konci sveta, Košice
+                                </p>
+                            </div>
+                        </li>
+                        <li class=”flex items-start”>
+                            <span class=”text-les-600 font-bold mr-4 text-xl mt-1”>✓</span>
+                            <p>Pri adopcii <strong>Hektorovho brata – Huňa</strong> z útulku, ocitol sa tam po tom čo mu zomrel jeho pán. Našim masívnym zdieľaním na facebooku sa k nemu dostali skvelí ľudia Michael a Veronika, s ktorými sme dodnes kamoši 🙂</p>
+                        </li>
+                        <li class=”flex items-start bg-pes-50 p-6 rounded-2xl shadow-sm border border-nature-100”>
+                            <span class=”text-les-600 font-bold mr-4 text-2xl”>✓</span>
+                            <p class=”font-bold text-les-950”>… a mnoho ďaľším, nakoniec všetko máme na transparentom účte. ĎAKUJEM VÁM.</p>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+        <!-- Webinar Section -->
+        <div class="max-w-4xl mx-auto mt-20 pt-10 border-t border-pes-200">
+            <h2 class="text-4xl font-black text-les-950 mb-6 uppercase tracking-tight flex items-center flex-wrap gap-4">
+                Webinár o výžive psov
+                <span class="bg-cez-600 text-white text-lg px-4 py-1 rounded-full tracking-wider shadow-sm font-black">ZDARMA</span>
+            </h2>
+            <div class="bg-white p-8 md:p-10 rounded-3xl shadow-lg border border-pes-100 flex flex-col md:flex-row items-center gap-8">
+                <div class="w-full md:w-1/2 flex flex-col gap-4">
+                    <a href="https://www.youtube.com/watch?v=GObnWrcSlXo" target="_blank" rel="noopener" class="block relative rounded-2xl overflow-hidden shadow-md group border border-pes-100">
+                        <img src="https://img.youtube.com/vi/GObnWrcSlXo/hqdefault.jpg" alt="Prehrať video" class="w-full aspect-video min-h-[250px] object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-les-950/20 flex items-center justify-center transition-colors group-hover:bg-les-950/30">
+                            <div class="w-16 h-12 bg-nature-600 rounded-xl flex items-center justify-center shadow-2xl transform transition-transform group-hover:scale-110">
+                                <svg class="w-8 h-8 text-white fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <p class="text-les-900 text-lg leading-relaxed mb-6">
+                        V roku 2024 som bol svedkom viacerých excesov v mojom okolí, ale aj v online priestore čo sa týka <strong class="text-les-600">STRAVOVANIA</strong> psov. Uvedomil som si, že 95% majiteľov kŕmi svojich psov nesprávne, čo vedie k zdravotným problémom, ochoreniam či alergiám.
+                        <br><br>
+                        Práve toto ma donútilo vytvoriť tento <strong class="border-b-2 border-nature-400">bezplatný webinár</strong>, ktorý vecne a jasne pomenúva problém a poskytuje riešenie. <strong class="text-les-950">Informácie vo webinári majú moc predĺžiť život tvojmu psovi iba zmenou stravy!</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-les-950 pt-12 pb-8 text-white relative mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="border-t border-pes-200/20 pt-8 flex text-sm text-pes-100 font-medium justify-between">
+                <p>&copy; 2026 PESCEZLES.</p>
+                <ul class="space-x-4 flex">
+                     <li><a href="vylety.html" class="hover:text-white">Výlety</a></li>
+                     <li><a href="pomoc.html" class="hover:text-white">Pomoc</a></li>
+                     <li><a href="misia.html" class="hover:text-white">Misia</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misia | PESCEZLES</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] }, colors: {
+                        pes: { 50: '#faf7f2', 100: '#f5ecd8', 200: '#e5d7ba' }, // Bezova tepla
+                        cez: { 500: '#ef4444', 600: '#dc2626', 700: '#b91c1c' }, // Cervena
+                        les: { 500: '#0b6159', 600: '#09504a', 700: '#073f3a', 800: '#05302c', 900: '#04221f', 950: '#021513' } // Temna zelena namiesto ciernej
+                    } } } }
+    </script>
+</head>
+<body class="bg-pes-50 text-les-950 font-sans antialiased">
+    
+    <nav class="fixed w-full z-50 bg-white border-b border-pes-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="block h-10 w-auto">
+                        <img src="./images/pescezles-500x91-1.png" alt="PESCEZLES" class="h-full w-auto object-contain">
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="vylety.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Výlety</a>
+                    <a href="pomoc.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Pomoc</a>
+                    <a href="misia.html" class="text-sm font-bold uppercase tracking-wider text-les-600 transition-colors">Misia</a>
+                    <a href="kniha.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Kniha</a>
+                    <a href="blog.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="pt-40 pb-20 bg-les-950 relative overflow-hidden">
+        <div class="absolute inset-0 bg-les-900">
+            <!-- Background Image -->
+            <img src="./images/psieurofond.png" onerror="this.src='./images/1.webp'" class="w-full h-full object-cover opacity-20 filter grayscale" alt="Dogs background">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-nature-900"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <span class="inline-block px-4 py-1 border border-les-500 text-pes-200 rounded-full font-bold tracking-widest text-sm mb-6">PROJEKT DOGYPT</span>
+            <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight max-w-4xl mx-auto">Čo ak by sme mohli zachrániť milióny psov po celom svete?</h1>
+            <p class="text-xl text-pes-100 max-w-3xl mx-auto font-medium">Predstav si spôsob, ako môžu všetci milujúci majitelia psov spojiť sily. Pridal by si sa?</p>
+        </div>
+    </header>
+
+    <main class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            
+            <div class="order-2 lg:order-1">
+                <h2 class="text-4xl font-black text-les-950 mb-6">Spoločne meníme svet</h2>
+                <div class="space-y-6 text-les-800 text-lg leading-relaxed">
+                    <p>Za 3 roky sme spoločne s vami zachránili množstvo psov, mačiek a iných zvierat. Každý deň prináša menšie či väčšie víťazstvá. Našim cieľom je však ísť ešte ďalej.</p>
+                    <p>Sme vo fáze tvorby revolučného systému <strong>DOGYPT APP</strong>, ktorý dokáže prepojiť všetkých komunitne zmýšľajúcich psíčkarov.</p>
+                    <div class="p-6 bg-pes-50 rounded-2xl border-l-4 border-les-500 italic mt-8 font-medium">
+                        "Jediný dôvod prečo vystupujem na internete je, že chcem pomáhať zvieratám a mám plán ako zachrániť psov na celom svete. Vždy stojím a budem stáť na strane zvierat." — <span class="font-bold">Matej (Pán Šeliem)</span>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <button class="bg-les-950 hover:bg-nature-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-transform hover:-translate-y-1">Chcem byť súčasťou</button>
+                </div>
+            </div>
+
+            <div class="order-1 lg:order-2">
+                <div class="bg-white p-8 rounded-3xl shadow-xl flex items-center justify-center transform hover:scale-105 transition-transform duration-500 border border-pes-100">
+                    <img src="./images/Dizajn-bez-nazvu-8-2.webp" alt="Dogypt App" class="w-full max-w-md h-auto">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-les-950 pt-12 pb-8 text-white relative mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex justify-center text-sm text-pes-100 font-medium">
+            <p>&copy; 2026 PESCEZLES.</p>
+        </div>
+    </footer>
+</body>
+</html>

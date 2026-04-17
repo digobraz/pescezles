@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misia Mňaučín | PESCEZLES</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] }, colors: {
+                        pes: { 50: '#faf7f2', 100: '#f5ecd8', 200: '#e5d7ba' }, // Bezova tepla
+                        cez: { 500: '#ef4444', 600: '#dc2626', 700: '#b91c1c' }, // Cervena
+                        les: { 500: '#0b6159', 600: '#09504a', 700: '#073f3a', 800: '#05302c', 900: '#04221f', 950: '#021513' } // Temna zelena namiesto ciernej
+                    } } } }
+    </script>
+</head>
+<body class="bg-pes-50 text-les-950 font-sans antialiased">
+    
+    <nav class="fixed w-full z-50 bg-white border-b border-pes-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="block h-10 w-auto">
+                        <img src="./images/pescezles-500x91-1.png" alt="PESCEZLES" class="h-full w-auto object-contain">
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="vylety.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Výlety</a>
+                    <a href="pomoc.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Pomoc</a>
+                    <a href="misia.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Misia</a>
+                    <a href="kniha.html" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Kniha</a>
+                    <a href="blog.html" class="text-sm font-bold uppercase tracking-wider text-les-600 transition-colors">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-20 bg-les-950 overflow-hidden relative">
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <span class="inline-block py-2 px-4 rounded-full border border-les-500 text-pes-200 font-bold mb-6 tracking-widest text-sm uppercase">Blog</span>
+            <h1 class="text-4xl md:text-6xl font-black mb-6">Misia Mňaučín</h1>
+            <p class="text-pes-50 text-xl font-medium">Príbeh štyroch mačičiek (Berta, Bela, Bejby a Beo), ktoré dostali druhú šancu na život.</p>
+        </div>
+        <div class="absolute inset-0 z-0 bg-[url('./images/POMOZ-NAM-VYBUDOVAT-MNAUCIN-819x1024.webp')] bg-cover bg-center bg-no-repeat opacity-30"></div>
+    </header>
+
+    <main class="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <article class="bg-white p-8 md:p-14 rounded-3xl shadow-xl border border-pes-100 prose prose-lg prose-nature max-w-none">
+            
+            <img src="./images/POMOZ-NAM-VYBUDOVAT-MNAUCIN-819x1024.webp" onerror="this.src='./images/POMOZ-NAM-VYBUDOVAT-MNAUCIN.webp'" alt="Plagát Mňaučín" class="w-full max-w-md mx-auto rounded-xl shadow-lg border border-pes-200 mb-10 object-contain">
+            
+            <p class="text-xl text-les-900 leading-relaxed font-medium mb-8">
+                Tento blog slúži zatiaľ len ako koncept pre náš príbeh. Vieme, že sme chceli umiestniť 4 opustené mačičky (<strong class="text-les-600">Berta, Bela, Bejby a Beo</strong>) do opustenej stodoly vo Farmalande. 
+            </p>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Avšak pre nedostatok financií sa Mňaučín nepodarilo dostavať. I tak má ale tento príbeh krásny koniec. O mačiatka sme sa doma starali viac ako pol roka v našej dočasnej opatere a nakoniec sme im všetkým našli nové, milujúce rodiny.
+            </p>
+            <div class="bg-pes-50 border-l-4 border-les-500 p-6 rounded-r-xl mt-12">
+                <p class="text-les-900 font-semibold m-0 text-center">
+                    (Viac obsahu do tohto blogu doplníme spoločne v blízkej budúcnosti!)
+                </p>
+            </div>
+            
+        </article>
+        
+        <div class="mt-12 text-center">
+            <a href="blog.html" class="inline-block text-les-600 font-bold hover:text-les-900 transition-colors">
+                ← Späť na všetky články
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-les-950 pt-12 pb-8 text-white relative mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex justify-center text-sm text-pes-100 font-medium">
+            <p>&copy; 2026 PESCEZLES.</p>
+        </div>
+    </footer>
+</body>
+</html>
