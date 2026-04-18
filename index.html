@@ -150,16 +150,28 @@
                     <a href="#blog"
                         class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Blog</a>
                 </div>
-                <!-- Mobile button placeholder -->
+                <!-- Mobile button -->
                 <div class="md:hidden flex items-center">
-                    <button class="text-les-900 hover:text-cez-600 focus:outline-none">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <button id="mobileMenuBtn" class="text-les-900 hover:text-cez-600 focus:outline-none">
+                        <svg id="hamIcon" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                        <svg id="closeIcon" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
                 </div>
             </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-pes-100 py-4 px-4 space-y-1">
+            <a href="#pomoc" class="block py-3 px-4 text-les-950 font-bold uppercase tracking-wider text-sm rounded-xl hover:bg-pes-50 transition-colors">Pomoc</a>
+            <a href="#misia" class="block py-3 px-4 text-les-950 font-bold uppercase tracking-wider text-sm rounded-xl hover:bg-pes-50 transition-colors">Poslanie</a>
+            <a href="#kniha" class="block py-3 px-4 text-les-950 font-bold uppercase tracking-wider text-sm rounded-xl hover:bg-pes-50 transition-colors">Prínos</a>
+            <a href="vylety.html" class="block py-3 px-4 text-les-950 font-bold uppercase tracking-wider text-sm rounded-xl hover:bg-pes-50 transition-colors">Výlety</a>
+            <a href="#blog" class="block py-3 px-4 text-les-950 font-bold uppercase tracking-wider text-sm rounded-xl hover:bg-pes-50 transition-colors">Blog</a>
         </div>
     </nav>
 
@@ -210,82 +222,100 @@
                 <h2 class="text-4xl md:text-6xl font-black text-les-950">Naše tri piliere</h2>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-10">
+            <div class="grid md:grid-cols-3 gap-6 md:gap-10">
                 <!-- Pilier 1 -->
-                <div
-                    class="group bg-white rounded-[3rem] p-10 border border-pes-100 hover:shadow-2xl transition-all duration-700 relative overflow-hidden flex flex-col justify-center items-center text-center h-[450px]">
-                    <div
-                        class="absolute inset-0 bg-les-950 opacity-0 group-hover:opacity-95 transition-opacity duration-500 z-0">
-                    </div>
-
-                    <div class="relative z-10 flex flex-col items-center justify-center transition-all duration-700">
-                        <div class="w-24 h-24 md:w-32 md:h-32 bg-pes-100 text-les-600 rounded-[2rem] flex items-center justify-center mb-6 shadow-inner group-hover:bg-cez-600 group-hover:text-white transition-all duration-500 transform group-hover:rotate-12 group-hover:opacity-0 group-hover:scale-0">
-                            <i class="fa-solid fa-tree text-4xl md:text-6xl"></i>
+                <div class="group bg-white rounded-[2rem] md:rounded-[3rem] border border-pes-100 hover:shadow-2xl transition-all duration-700 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-les-950 opacity-0 group-hover:opacity-95 transition-opacity duration-500 z-0"></div>
+                    <!-- Mobile accordion -->
+                    <div class="md:hidden">
+                        <button onclick="togglePilier(this)" class="w-full flex items-center gap-4 text-left p-5 focus:outline-none">
+                            <div class="w-12 h-12 bg-pes-100 text-les-700 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-tree text-xl"></i>
+                            </div>
+                            <span class="text-base font-black text-les-950 uppercase tracking-tighter flex-grow">Kráčame lesom</span>
+                            <i class="fa-solid fa-chevron-down text-les-500 transition-transform duration-300 pilier-chevron"></i>
+                        </button>
+                        <div class="pilier-content hidden px-5 pb-5">
+                            <p class="text-les-800 text-sm leading-relaxed font-medium mb-4">Naša ONLINE púť začala zdieľaním našich OFFLINE dobrodružstiev na instagrame. Aj keď sme s Hektorom prešli celé Slovensko, stále radi objavujeme nové miesta.</p>
+                            <a href="vylety.html" class="inline-flex items-center justify-center py-3 px-8 bg-cez-600 hover:bg-cez-500 text-white font-bold rounded-full text-sm transition-all">Naše trasy <span class="ml-2">→</span></a>
                         </div>
-                        <h3 class="text-2xl lg:text-3xl font-black text-les-950 uppercase tracking-tighter transition-all duration-700 group-hover:scale-75 group-hover:-translate-y-24 whitespace-nowrap">Kráčame lesom</h3>
                     </div>
-
-                    <div class="absolute inset-x-10 bottom-10 z-10 opacity-0 transform translate-y-12 group-hover:opacity-100 group-hover:-translate-y-16 transition-all duration-700 delay-150 flex flex-col items-center">
-                        <p class="text-[13px] md:text-base text-pes-100 leading-relaxed font-medium mb-8">
-                            Naša ONLINE púť začala zdieľaním našich OFFLINE dobrodružstiev na instagrame. Aj keď sme s
-                            Hektorom prešli celé Slovensko, stále radi objavujeme nové miesta.
-                        </p>
-                        <a href="vylety.html"
-                            class="inline-flex items-center justify-center py-4 px-10 bg-cez-600 hover:bg-cez-500 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-110 active:scale-95 shadow-xl shadow-cez-600/30">
-                            Naše trasy <span class="ml-2 font-black">→</span>
-                        </a>
+                    <!-- Desktop hover card -->
+                    <div class="hidden md:flex flex-col justify-center items-center text-center h-[450px] p-10 relative">
+                        <div class="relative z-10 flex flex-col items-center justify-center transition-all duration-700">
+                            <div class="w-24 h-24 md:w-32 md:h-32 bg-pes-100 text-les-600 rounded-[2rem] flex items-center justify-center mb-6 shadow-inner group-hover:bg-cez-600 group-hover:text-white transition-all duration-500 transform group-hover:rotate-12 group-hover:opacity-0 group-hover:scale-0">
+                                <i class="fa-solid fa-tree text-4xl md:text-6xl"></i>
+                            </div>
+                            <h3 class="text-2xl lg:text-3xl font-black text-les-950 uppercase tracking-tighter transition-all duration-700 group-hover:scale-75 group-hover:-translate-y-24 whitespace-nowrap">Kráčame lesom</h3>
+                        </div>
+                        <div class="absolute inset-x-10 bottom-10 z-10 opacity-0 transform translate-y-12 group-hover:opacity-100 group-hover:-translate-y-16 transition-all duration-700 delay-150 flex flex-col items-center">
+                            <p class="text-[13px] md:text-base text-pes-100 leading-relaxed font-medium mb-8">Naša ONLINE púť začala zdieľaním našich OFFLINE dobrodružstiev na instagrame. Aj keď sme s Hektorom prešli celé Slovensko, stále radi objavujeme nové miesta.</p>
+                            <a href="vylety.html" class="inline-flex items-center justify-center py-4 px-10 bg-cez-600 hover:bg-cez-500 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-110 active:scale-95 shadow-xl shadow-cez-600/30">Naše trasy <span class="ml-2 font-black">→</span></a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Pilier 2 -->
-                <div
-                    class="group bg-white rounded-[3rem] p-10 border border-pes-100 hover:shadow-2xl transition-all duration-700 relative overflow-hidden flex flex-col justify-center items-center text-center h-[450px]">
-                    <div
-                        class="absolute inset-0 bg-les-950 opacity-0 group-hover:opacity-95 transition-opacity duration-500 z-0">
-                    </div>
-
-                    <div class="relative z-10 flex flex-col items-center justify-center transition-all duration-700">
-                        <div class="w-24 h-24 md:w-32 md:h-32 bg-pes-100 text-les-600 rounded-[2rem] flex items-center justify-center mb-6 shadow-inner group-hover:bg-cez-600 group-hover:text-white transition-all duration-500 transform group-hover:rotate-12 group-hover:opacity-0 group-hover:scale-0">
-                            <i class="fa-solid fa-paw text-4xl md:text-6xl"></i>
+                <div class="group bg-white rounded-[2rem] md:rounded-[3rem] border border-pes-100 hover:shadow-2xl transition-all duration-700 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-les-950 opacity-0 group-hover:opacity-95 transition-opacity duration-500 z-0"></div>
+                    <!-- Mobile accordion -->
+                    <div class="md:hidden">
+                        <button onclick="togglePilier(this)" class="w-full flex items-center gap-4 text-left p-5 focus:outline-none">
+                            <div class="w-12 h-12 bg-pes-100 text-les-700 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-paw text-xl"></i>
+                            </div>
+                            <span class="text-base font-black text-les-950 uppercase tracking-tighter flex-grow">Pomáhame zverom</span>
+                            <i class="fa-solid fa-chevron-down text-les-500 transition-transform duration-300 pilier-chevron"></i>
+                        </button>
+                        <div class="pilier-content hidden px-5 pb-5">
+                            <p class="text-les-800 text-sm leading-relaxed font-medium mb-4">Spoločne sme zachránili mnoho psov a mačiek v núdzi. Pomáhame útulkom a vzdelávame aj ľudí, ako kŕmiť lepšie s cieľom zvýšiť obrovským dielom dlhovekosť vašich miláčikov.</p>
+                            <a href="#pomoc" class="inline-flex items-center justify-center py-3 px-8 bg-cez-600 hover:bg-cez-500 text-white font-bold rounded-full text-sm transition-all">Viac o pomoci <span class="ml-2">→</span></a>
                         </div>
-                        <h3 class="text-2xl lg:text-3xl font-black text-les-950 uppercase tracking-tighter transition-all duration-700 group-hover:scale-75 group-hover:-translate-y-24 whitespace-nowrap">Pomáhame zverom</h3>
                     </div>
-
-                    <div class="absolute inset-x-10 bottom-10 z-10 opacity-0 transform translate-y-12 group-hover:opacity-100 group-hover:-translate-y-16 transition-all duration-700 delay-150 flex flex-col items-center">
-                        <p class="text-[13px] md:text-base text-pes-100 leading-relaxed font-medium mb-8">
-                            Spoločne sme zachránili mnoho psov a mačiek v núdzi. Pomáhame útulkom a vzdelávame aj ľudí,
-                            ako kŕmiť lepšie s cieľom zvýšiť obrovským dielom dlhovekosť vašich miláčikov.
-                        </p>
-                        <a href="#pomoc"
-                            class="inline-flex items-center justify-center py-4 px-10 bg-cez-600 hover:bg-cez-500 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-110 active:scale-95 shadow-xl shadow-cez-600/30">
-                            Viac o pomoci <span class="ml-2 font-black">→</span>
-                        </a>
+                    <!-- Desktop hover card -->
+                    <div class="hidden md:flex flex-col justify-center items-center text-center h-[450px] p-10 relative">
+                        <div class="relative z-10 flex flex-col items-center justify-center transition-all duration-700">
+                            <div class="w-24 h-24 md:w-32 md:h-32 bg-pes-100 text-les-600 rounded-[2rem] flex items-center justify-center mb-6 shadow-inner group-hover:bg-cez-600 group-hover:text-white transition-all duration-500 transform group-hover:rotate-12 group-hover:opacity-0 group-hover:scale-0">
+                                <i class="fa-solid fa-paw text-4xl md:text-6xl"></i>
+                            </div>
+                            <h3 class="text-2xl lg:text-3xl font-black text-les-950 uppercase tracking-tighter transition-all duration-700 group-hover:scale-75 group-hover:-translate-y-24 whitespace-nowrap">Pomáhame zverom</h3>
+                        </div>
+                        <div class="absolute inset-x-10 bottom-10 z-10 opacity-0 transform translate-y-12 group-hover:opacity-100 group-hover:-translate-y-16 transition-all duration-700 delay-150 flex flex-col items-center">
+                            <p class="text-[13px] md:text-base text-pes-100 leading-relaxed font-medium mb-8">Spoločne sme zachránili mnoho psov a mačiek v núdzi. Pomáhame útulkom a vzdelávame aj ľudí, ako kŕmiť lepšie s cieľom zvýšiť obrovským dielom dlhovekosť vašich miláčikov.</p>
+                            <a href="#pomoc" class="inline-flex items-center justify-center py-4 px-10 bg-cez-600 hover:bg-cez-500 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-110 active:scale-95 shadow-xl shadow-cez-600/30">Viac o pomoci <span class="ml-2 font-black">→</span></a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Pilier 3 -->
-                <div
-                    class="group bg-white rounded-[3rem] p-10 border border-pes-100 hover:shadow-2xl transition-all duration-700 relative overflow-hidden flex flex-col justify-center items-center text-center h-[450px]">
-                    <div
-                        class="absolute inset-0 bg-les-950 opacity-0 group-hover:opacity-95 transition-opacity duration-500 z-0">
-                    </div>
-
-                    <div class="relative z-10 flex flex-col items-center justify-center transition-all duration-700">
-                        <div class="w-24 h-24 md:w-32 md:h-32 bg-pes-100 text-les-600 rounded-[2rem] flex items-center justify-center mb-6 shadow-inner group-hover:bg-cez-600 group-hover:text-white transition-all duration-500 transform group-hover:rotate-12 group-hover:opacity-0 group-hover:scale-0">
-                            <i class="fa-solid fa-earth-americas text-4xl md:text-6xl"></i>
+                <div class="group bg-white rounded-[2rem] md:rounded-[3rem] border border-pes-100 hover:shadow-2xl transition-all duration-700 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-les-950 opacity-0 group-hover:opacity-95 transition-opacity duration-500 z-0"></div>
+                    <!-- Mobile accordion -->
+                    <div class="md:hidden">
+                        <button onclick="togglePilier(this)" class="w-full flex items-center gap-4 text-left p-5 focus:outline-none">
+                            <div class="w-12 h-12 bg-pes-100 text-les-700 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-earth-americas text-xl"></i>
+                            </div>
+                            <span class="text-base font-black text-les-950 uppercase tracking-tighter flex-grow">Meníme svet</span>
+                            <i class="fa-solid fa-chevron-down text-les-500 transition-transform duration-300 pilier-chevron"></i>
+                        </button>
+                        <div class="pilier-content hidden px-5 pb-5">
+                            <p class="text-les-800 text-sm leading-relaxed font-medium mb-4">Čo ak existuje SPÔSOB akým dokážu milujúci majitelia spojiť sily a zachrániť milióny psov z pekla ulice celosvetovo? Pridaj sa k nášmu revolučnému a ambicióznemu projektu.</p>
+                            <a href="#misia" class="inline-flex items-center justify-center py-3 px-8 bg-cez-600 hover:bg-cez-500 text-white font-bold rounded-full text-sm transition-all">Projekt Dogypt <span class="ml-2">→</span></a>
                         </div>
-                        <h3 class="text-2xl lg:text-3xl font-black text-les-950 uppercase tracking-tighter transition-all duration-700 group-hover:scale-75 group-hover:-translate-y-24 whitespace-nowrap">Meníme svet</h3>
                     </div>
-
-                    <div class="absolute inset-x-10 bottom-10 z-10 opacity-0 transform translate-y-12 group-hover:opacity-100 group-hover:-translate-y-16 transition-all duration-700 delay-150 flex flex-col items-center">
-                        <p class="text-[13px] md:text-base text-pes-100 leading-relaxed font-medium mb-8">
-                            Čo ak existuje SPÔSOB akým dokážu milujúci majitelia spojiť sily a zachrániť milióny psov z
-                            pekla ulice celosvetovo? Pridaj sa k nášmu revolučnému a ambicióznemu projektu.
-                        </p>
-                        <a href="#misia"
-                            class="inline-flex items-center justify-center py-4 px-10 bg-cez-600 hover:bg-cez-500 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-110 active:scale-95 shadow-xl shadow-cez-600/30">
-                            Projekt Dogypt <span class="ml-2 font-black">→</span>
-                        </a>
+                    <!-- Desktop hover card -->
+                    <div class="hidden md:flex flex-col justify-center items-center text-center h-[450px] p-10 relative">
+                        <div class="relative z-10 flex flex-col items-center justify-center transition-all duration-700">
+                            <div class="w-24 h-24 md:w-32 md:h-32 bg-pes-100 text-les-600 rounded-[2rem] flex items-center justify-center mb-6 shadow-inner group-hover:bg-cez-600 group-hover:text-white transition-all duration-500 transform group-hover:rotate-12 group-hover:opacity-0 group-hover:scale-0">
+                                <i class="fa-solid fa-earth-americas text-4xl md:text-6xl"></i>
+                            </div>
+                            <h3 class="text-2xl lg:text-3xl font-black text-les-950 uppercase tracking-tighter transition-all duration-700 group-hover:scale-75 group-hover:-translate-y-24 whitespace-nowrap">Meníme svet</h3>
+                        </div>
+                        <div class="absolute inset-x-10 bottom-10 z-10 opacity-0 transform translate-y-12 group-hover:opacity-100 group-hover:-translate-y-16 transition-all duration-700 delay-150 flex flex-col items-center">
+                            <p class="text-[13px] md:text-base text-pes-100 leading-relaxed font-medium mb-8">Čo ak existuje SPÔSOB akým dokážu milujúci majitelia spojiť sily a zachrániť milióny psov z pekla ulice celosvetovo? Pridaj sa k nášmu revolučnému a ambicióznemu projektu.</p>
+                            <a href="#misia" class="inline-flex items-center justify-center py-4 px-10 bg-cez-600 hover:bg-cez-500 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-110 active:scale-95 shadow-xl shadow-cez-600/30">Projekt Dogypt <span class="ml-2 font-black">→</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -583,7 +613,7 @@
                                 <div
                                     class="w-32 h-40 rounded-2xl bg-les-800 border-2 border-cez-600/20 overflow-hidden shadow-xl transform group-hover:-translate-x-2 transition-all duration-300">
                                     <img src="./FOTO/mini-heky.png" onerror="this.src='./images/1.webp'" alt="2017"
-                                        class="w-full h-full object-cover">
+                                        class="w-full h-full object-cover object-top">
                                 </div>
                             </div>
                         </div>
@@ -600,7 +630,7 @@
                                 <div
                                     class="w-full h-40 rounded-2xl bg-les-800 border-2 border-cez-600/20 overflow-hidden shadow-xl">
                                     <img src="./FOTO/mini-heky.png" onerror="this.src='./images/1.webp'" alt="2017"
-                                        class="w-full h-full object-cover">
+                                        class="w-full h-full object-cover object-top">
                                 </div>
                             </div>
                         </div>
@@ -616,7 +646,7 @@
                                 <div
                                     class="w-32 h-40 rounded-2xl bg-les-800 border-2 border-cez-600/20 overflow-hidden shadow-xl transform group-hover:translate-x-2 transition-all duration-300">
                                     <img src="./FOTO/busta.png" onerror="this.src='./images/1.webp'" alt="2018"
-                                        class="w-full h-full object-cover">
+                                        class="w-full h-full object-cover object-top">
                                 </div>
                             </div>
                         </div>
@@ -633,7 +663,7 @@
                                 <div
                                     class="w-full h-40 rounded-2xl bg-les-800 border-2 border-cez-600/20 overflow-hidden shadow-xl">
                                     <img src="./FOTO/busta.png" onerror="this.src='./images/1.webp'" alt="2018"
-                                        class="w-full h-full object-cover">
+                                        class="w-full h-full object-cover object-top">
                                 </div>
                             </div>
                         </div>
@@ -649,7 +679,7 @@
                                 <div
                                     class="w-32 h-40 rounded-2xl bg-les-800 border-2 border-cez-600/20 overflow-hidden shadow-xl transform group-hover:-translate-x-2 transition-all duration-300">
                                     <img src="./FOTO/vylety.png" onerror="this.src='./images/1.webp'" alt="2019-2021"
-                                        class="w-full h-full object-cover">
+                                        class="w-full h-full object-cover object-top">
                                 </div>
                             </div>
                         </div>
@@ -666,7 +696,7 @@
                                 <div
                                     class="w-full h-40 rounded-2xl bg-les-800 border-2 border-cez-600/20 overflow-hidden shadow-xl">
                                     <img src="./FOTO/vylety.png" onerror="this.src='./images/1.webp'" alt="2019-2021"
-                                        class="w-full h-full object-cover">
+                                        class="w-full h-full object-cover object-top">
                                 </div>
                             </div>
                         </div>
@@ -812,7 +842,7 @@
                                     <div
                                         class="w-32 h-40 rounded-2xl bg-les-800 border-2 border-cez-600/20 overflow-hidden shadow-xl">
                                         <img src="./FOTO/dick.png" onerror="this.src='./images/1.webp'" alt="Dick Time"
-                                            class="w-full h-full object-cover">
+                                            class="w-full h-full object-cover object-top">
                                     </div>
                                     <div
                                         class="w-32 h-40 rounded-2xl bg-cez-900 border-2 border-cez-500 overflow-hidden shadow-[0_0_20px_rgba(239,68,68,0.5)]">
@@ -836,7 +866,7 @@
                                     <div
                                         class="h-40 rounded-2xl bg-les-800 border-2 border-cez-600/20 overflow-hidden shadow-xl">
                                         <img src="./FOTO/dick.png" onerror="this.src='./images/1.webp'" alt="Dick Time"
-                                            class="w-full h-full object-cover">
+                                            class="w-full h-full object-cover object-top">
                                     </div>
                                     <div
                                         class="h-40 rounded-2xl bg-cez-900 border-2 border-cez-500 overflow-hidden shadow-[0_0_20px_rgba(239,68,68,0.5)]">
@@ -890,7 +920,7 @@
                             <div
                                 class="flex justify-end transform group-hover:-translate-x-2 transition-all duration-300">
                                 <img src="./FOTO/LOGO DOGYPT FINAL web.png" onerror="this.src='./images/1.webp'"
-                                    alt="Dogypt" class="h-24 w-auto object-contain drop-shadow-2xl opacity-100">
+                                    alt="Dogypt" class="h-36 w-auto object-contain drop-shadow-2xl opacity-100">
                             </div>
                         </div>
                         <div
@@ -905,7 +935,7 @@
                                     class="text-3xl font-black text-cez-400 group-hover:text-cez-300 transition-colors mb-4">
                                     DOGYPT LAUNCH</h3>
                                 <img src="./FOTO/LOGO DOGYPT FINAL web.png" onerror="this.src='./images/1.webp'"
-                                    alt="Dogypt" class="h-20 w-auto object-contain drop-shadow-2xl opacity-100">
+                                    alt="Dogypt" class="h-28 w-auto object-contain drop-shadow-2xl opacity-100">
                             </div>
                         </div>
                     </div>
@@ -917,7 +947,7 @@
     <section id="kniha" class="py-24 bg-pes-100 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <span class="inline-block py-1 px-4 rounded-full bg-cez-600 text-white font-bold text-sm tracking-widest uppercase mb-4 shadow-md">Čo tvoríme</span>
+                <span class="inline-block py-1 px-4 rounded-full bg-les-950 text-white font-bold text-sm tracking-widest uppercase mb-4 shadow-md">Čo tvoríme</span>
                 <h2 class="text-4xl md:text-6xl font-black text-les-950">Prínos pre komunitu</h2>
             </div>
 
@@ -975,9 +1005,9 @@
                     <p class="text-les-800 text-sm font-medium leading-relaxed mb-4 flex-grow">
                         Od roku 2025 prevádzkujeme FARMALAND v Šúrovciach — bezpečný prístav pre nechcené zvieratá. Každý tvor má právo na život.
                     </p>
-                    <a href="#misia"
+                    <a href="https://www.farmaland.sk" target="_blank" rel="noopener"
                         class="inline-flex items-center text-les-800 font-black hover:text-cez-600 transition-colors mt-auto text-sm w-max">
-                        Spoznaj našu víziu ↗
+                        Zvierací azyl ↗
                     </a>
                 </div>
 
@@ -1074,7 +1104,7 @@
                     <div class="aspect-video overflow-hidden">
                         <img src="https://www.pescezles.sk/wp-content/uploads/2025/03/Bez-nazvu-842-x-1160-px-2-600x827.webp"
                             alt="PESCEZLES Startitup"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="px-4 py-3 bg-white">
                         <span class="text-xs font-black uppercase tracking-widest text-les-500">Startitup.sk</span>
@@ -1159,15 +1189,9 @@
     <!-- Blog Section -->
     <section id="blog" class="py-32 bg-pes-100 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-6 text-center md:text-left">
-                <div>
-                    <span class="inline-block py-1 px-4 rounded-full bg-les-950 text-white font-bold text-sm tracking-widest uppercase mb-4 shadow-md">Aktuality</span>
-                    <h2 class="text-4xl md:text-6xl font-black text-les-950">Posledné z Blogu</h2>
-                </div>
-                <a href="blog.html"
-                    class="inline-flex items-center justify-center py-4 px-8 bg-white hover:bg-les-950 hover:text-white text-les-950 font-bold rounded-full transition-colors border border-pes-200 shadow-sm whitespace-nowrap mx-auto md:mx-0">
-                    Všetky články <span class="ml-2 leading-none">→</span>
-                </a>
+            <div class="text-center mb-16">
+                <span class="inline-block py-1 px-4 rounded-full bg-les-950 text-white font-bold text-sm tracking-widest uppercase mb-4 shadow-md">Aktuality</span>
+                <h2 class="text-4xl md:text-6xl font-black text-les-950">Posledné z Blogu</h2>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!-- Article 1: Mňaučín -->
@@ -1181,7 +1205,7 @@
                     </a>
                     <div class="p-8 flex flex-col flex-grow relative bg-white">
                         <div class="absolute top-0 right-8 transform -translate-y-1/2">
-                            <span class="bg-cez-600 text-white text-xs font-black px-4 py-2 rounded-full uppercase tracking-widest shadow-lg">Novinka</span>
+                            <span class="bg-les-950 text-white text-xs font-black px-4 py-2 rounded-full uppercase tracking-widest shadow-lg">Novinka</span>
                         </div>
                         <span class="text-xs uppercase font-bold text-les-500 tracking-wider mb-3">Záchrana</span>
                         <h3 class="text-2xl font-black mb-4 text-les-950 group-hover:text-cez-600 transition-colors leading-tight">Misia Mňaučín</h3>
@@ -1193,23 +1217,23 @@
                 </article>
                 <!-- Article 2: Kauza Fifinka -->
                 <article class="bg-white rounded-[2rem] overflow-hidden shadow-xl border border-white flex flex-col group hover:-translate-y-4 transition-transform duration-500 hover:shadow-2xl hover:shadow-cez-900/10">
-                    <a href="#" class="aspect-video bg-les-900 overflow-hidden relative block">
+                    <a href="blog-fifinka.html" class="aspect-video bg-les-900 overflow-hidden relative block">
                         <div class="absolute inset-0 bg-les-900/20 group-hover:bg-transparent transition-colors z-10"></div>
-                        <img src="./images/IMG_2567-2.jpg" onerror="this.src='./images/IMG_2567-2-600x206.jpg'" alt="Kauza Fifinka"
+                        <img src="https://www.pescezles.sk/wp-content/uploads/2023/05/TURISTIKA-2022-1200-%C3%97-800-px-3-600x400.jpg" alt="Kauza Fifinka"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     </a>
                     <div class="p-8 flex flex-col flex-grow bg-white">
                         <span class="text-xs uppercase font-bold text-les-500 tracking-wider mb-3">Osveta</span>
                         <h3 class="text-2xl font-black mb-4 text-les-950 group-hover:text-cez-600 transition-colors leading-tight">KAUZA FIFINKA. Vražedná turistika a zlyhanie štátu</h3>
                         <p class="text-les-800 mb-8 flex-grow font-medium leading-relaxed">Prípad turistov vs štát a kruté podmienky v ktorých psy niekedy musia prežívať.</p>
-                        <a href="#" class="flex items-center font-black text-les-950 group-hover:text-cez-600 transition-colors w-max uppercase text-sm tracking-widest">
+                        <a href="blog-fifinka.html" class="flex items-center font-black text-les-950 group-hover:text-cez-600 transition-colors w-max uppercase text-sm tracking-widest">
                             Prečítať viac <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                         </a>
                     </div>
                 </article>
                 <!-- Article 3: Kliešte -->
                 <article class="bg-white rounded-[2rem] overflow-hidden shadow-xl border border-white flex flex-col group hover:-translate-y-4 transition-transform duration-500 hover:shadow-2xl hover:shadow-cez-900/10">
-                    <a href="#" class="aspect-video bg-les-900 overflow-hidden relative block">
+                    <a href="blog-klieste.html" class="aspect-video bg-les-900 overflow-hidden relative block">
                         <div class="absolute inset-0 bg-les-900/20 group-hover:bg-transparent transition-colors z-10"></div>
                         <img src="./images/Ako-ochranit-psa-pred-kliestami-600x400.jpg" onerror="this.src='./images/1.webp'" alt="Ochrana pred kliešťami"
                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
@@ -1218,17 +1242,52 @@
                         <span class="text-xs uppercase font-bold text-les-500 tracking-wider mb-3">Zdravie</span>
                         <h3 class="text-2xl font-black mb-4 text-les-950 group-hover:text-cez-600 transition-colors leading-tight">Ako ochrániť psa pred kliešťami: Zázračná tabletka (ne)existuje</h3>
                         <p class="text-les-800 mb-8 flex-grow font-medium leading-relaxed">Opäť je tu to ročné obdobie. Slnko svieti a kliešte lezúce na našich psoch pribúdajú.</p>
-                        <a href="#" class="flex items-center font-black text-les-950 group-hover:text-cez-600 transition-colors w-max uppercase text-sm tracking-widest">
+                        <a href="blog-klieste.html" class="flex items-center font-black text-les-950 group-hover:text-cez-600 transition-colors w-max uppercase text-sm tracking-widest">
                             Prečítať viac <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                         </a>
                     </div>
                 </article>
+            </div>
+            <div class="mt-12 flex justify-center">
+                <a href="blog.html"
+                    class="inline-flex items-center justify-center py-4 px-8 bg-white hover:bg-les-950 hover:text-white text-les-950 font-bold rounded-full transition-colors border border-pes-200 shadow-sm whitespace-nowrap">
+                    Všetky články <span class="ml-2 leading-none">→</span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer – edituj footer.js, zmena sa prejaví všade -->
     <script src="./footer.js"></script>
+    <script>
+        // Hamburger menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const hamIcon = document.getElementById('hamIcon');
+        const closeIcon = document.getElementById('closeIcon');
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                hamIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    hamIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                });
+            });
+        }
+
+        // Pilier accordion (mobile)
+        function togglePilier(btn) {
+            const content = btn.nextElementSibling;
+            const chevron = btn.querySelector('.pilier-chevron');
+            content.classList.toggle('hidden');
+            chevron.classList.toggle('rotate-180');
+        }
+    </script>
 </body>
 
 </html>

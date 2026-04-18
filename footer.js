@@ -5,7 +5,7 @@
         <div class="absolute inset-0 z-0 bg-cover bg-center opacity-[0.03]" style="background-image: url('./images/1.webp');"></div>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <div class="mb-16">
-                <img src="./images/pescezles-500x91-1.png" alt="PESCEZLES" class="h-12 w-auto object-contain mx-auto mb-6 filter brightness-0 invert">
+                <img src="./images/pescezles-500x91-1.png" alt="PESCEZLES" class="h-12 w-auto object-contain mx-auto mb-6">
                 <p class="text-pes-200 leading-relaxed text-lg font-medium max-w-2xl mx-auto">
                     Uvítame akúkoľvek pomoc, zdieľanie, správu, odporučenie, kontakt, finančnú, materiálnu alebo duševnú a fyzickú podporu. Ďakujeme vám za pomoc pri našej misii.
                 </p>
