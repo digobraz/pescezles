@@ -5,7 +5,7 @@
         <div class="absolute inset-0 z-0 bg-cover bg-center opacity-[0.03]" style="background-image: url('./images/1.webp');"></div>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <div class="mb-16">
-                <span class="font-black text-5xl md:text-6xl tracking-tighter text-white mb-6 block">PESCEZLES<span class="text-cez-600">.</span></span>
+                <img src="./images/pescezles-500x91-1.png" alt="PESCEZLES" class="h-12 w-auto object-contain mx-auto mb-6 filter brightness-0 invert">
                 <p class="text-pes-200 leading-relaxed text-lg font-medium max-w-2xl mx-auto">
                     Uvítame akúkoľvek pomoc, zdieľanie, správu, odporučenie, kontakt, finančnú, materiálnu alebo duševnú a fyzickú podporu. Ďakujeme vám za pomoc pri našej misii.
                 </p>
@@ -22,12 +22,8 @@
                     <span class="text-2xl md:text-3xl font-black text-white hover:text-cez-500 transition-colors border-b-2 border-transparent hover:border-cez-600 pb-1">spolupraca@pescezles.sk</span>
                 </a>
             </div>
-            <div class="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center text-xs text-pes-200 font-bold gap-4 opacity-50">
+            <div class="border-t border-white/10 pt-10 flex justify-center items-center text-xs text-pes-200 font-bold opacity-50">
                 <p>&copy; 2026 PESCEZLES. Všetky práva vyhradené.</p>
-                <div class="flex gap-6">
-                    <a href="#" class="hover:text-white transition-all uppercase tracking-widest">Ochrana súkromia</a>
-                    <a href="#" class="hover:text-white transition-all uppercase tracking-widest">Cookies</a>
-                </div>
             </div>
         </div>
     </footer>
