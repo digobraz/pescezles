@@ -22,3 +22,5 @@ jobs:
             **/.git*
             **/.git*/**
             .github/**
+          include: |
+            .htaccess
