@@ -22,3 +22,17 @@ jobs:
             **/.git*
             **/.git*/**
             .github/**
+
+      - name: Upload .htaccess via Python FTP
+        run: |
+          python3 - <<'EOF'
+          import ftplib
+          ftp = ftplib.FTP()
+          ftp.connect('${{ secrets.SERVER }}', 21)
+          ftp.login('${{ secrets.USERNAME }}', '${{ secrets.PASS }}')
+          ftp.cwd('/pescezles.sk/web')
+          with open('.htaccess', 'rb') as f:
+              ftp.storbinary('STOR .htaccess', f)
+          ftp.quit()
+          print('✓ .htaccess uploaded')
+          EOF
