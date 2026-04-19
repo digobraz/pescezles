@@ -2,6 +2,21 @@ DirectoryIndex index.html
 Options -Indexes
 
 RewriteEngine On
+
+# 301 redirecty – pôvodné WordPress URL → nové stránky
+RewriteRule ^ako-sa-ochranit-psa-pred-kliestami-zazracna-tabletka-neexistuje/?$ /blog-klieste.html [R=301,L]
+RewriteRule ^kauza-fifinka-vrazedna-turistika-a-zlyhanie-statu/?$ /blog-fifinka.html [R=301,L]
+RewriteRule ^cesta-snp-so-psom-pociatok-1-cast/?$ /blog-snp-pociatok.html [R=301,L]
+RewriteRule ^cesta-snp-so-psom-priprava-2-cast/?$ /blog-snp-priprava.html [R=301,L]
+RewriteRule ^cesta-snp-so-psom-vybava-3-cast/?$ /blog-snp-vybava.html [R=301,L]
+RewriteRule ^tajna-rajska-zahrada/?$ /vylet-rajska-zahrada.html [R=301,L]
+RewriteRule ^majdan-okruh-horne-oresany/?$ /vylet-majdan.html [R=301,L]
+RewriteRule ^prekazka/?$ /vylet-prekazka.html [R=301,L]
+RewriteRule ^blog/?$ /blog.html [R=301,L]
+RewriteRule ^vylety/?$ /vylety.html [R=301,L]
+RewriteRule ^misia/?$ /misia.html [R=301,L]
+
+# Čisté URL (bez .html)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^.]+)$ $1.html [NC,L]
