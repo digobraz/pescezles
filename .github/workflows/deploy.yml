@@ -22,6 +22,3 @@ jobs:
             **/.git*
             **/.git*/**
             .github/**
-
-      - name: Upload .htaccess via curl
-        run: curl -T .htaccess ftp://${{ secrets.SERVER }}/pescezles.sk/web/.htaccess --user ${{ secrets.USERNAME }}:${{ secrets.PASS }}
