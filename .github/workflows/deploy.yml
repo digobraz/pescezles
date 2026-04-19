@@ -16,7 +16,7 @@ jobs:
           server: ${{ secrets.SERVER }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASS }}
-          server-dir: /
+          server-dir: /pescezles.sk/web/
           exclude: |
             **/.git*
             **/.git*/**
