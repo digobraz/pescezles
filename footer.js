@@ -14,7 +14,7 @@
                 <a href="https://www.instagram.com/pescezles/" class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-cez-600 hover:text-white transition-all transform hover:-translate-y-2 border border-white/10" target="_blank" rel="noopener"><i class="fa-brands fa-instagram text-2xl"></i></a>
                 <a href="https://www.facebook.com/pescezles" class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-cez-600 hover:text-white transition-all transform hover:-translate-y-2 border border-white/10" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f text-2xl"></i></a>
                 <a href="https://www.youtube.com/@pescezles" class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-cez-600 hover:text-white transition-all transform hover:-translate-y-2 border border-white/10" target="_blank" rel="noopener"><i class="fa-brands fa-youtube text-2xl"></i></a>
-                <a href="https://www.tiktok.com/@beastmasster" class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-cez-600 hover:text-white transition-all transform hover:-translate-y-2 border border-white/10" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok text-2xl"></i></a>
+                <a href="https://www.tiktok.com/@stacho.man" class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-cez-600 hover:text-white transition-all transform hover:-translate-y-2 border border-white/10" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok text-2xl"></i></a>
             </div>
             <div class="mb-20">
                 <a href="mailto:spolupraca@pescezles.sk" class="inline-flex flex-col items-center group">
