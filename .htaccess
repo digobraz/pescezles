@@ -3,10 +3,6 @@ Options -Indexes
 
 RewriteEngine On
 
-# 301 redirect – odstrániť .html z blog a vylety
-RewriteRule ^blog\.html$ /blog [R=301,L]
-RewriteRule ^vylety\.html$ /vylety [R=301,L]
-
 # Blog články – nové URL /blog/slug
 RewriteRule ^blog/blog-mnaucin/?$ /blog-mnaucin.html [L]
 RewriteRule ^blog/kauza-fifinka-vrazedna-turistika-a-zlyhanie-statu/?$ /blog-fifinka.html [L]
