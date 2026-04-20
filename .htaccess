@@ -3,15 +3,32 @@ Options -Indexes
 
 RewriteEngine On
 
-# Pôvodné WordPress URL – interný rewrite (URL zostane zachovaná, SEO nezmení)
-RewriteRule ^ako-sa-ochranit-psa-pred-kliestami-zazracna-tabletka-neexistuje/?$ /blog-klieste.html [L]
-RewriteRule ^kauza-fifinka-vrazedna-turistika-a-zlyhanie-statu/?$ /blog-fifinka.html [L]
-RewriteRule ^cesta-snp-so-psom-pociatok-1-cast/?$ /blog-snp-pociatok.html [L]
-RewriteRule ^cesta-snp-so-psom-priprava-2-cast/?$ /blog-snp-priprava.html [L]
-RewriteRule ^cesta-snp-so-psom-vybava-3-cast/?$ /blog-snp-vybava.html [L]
-RewriteRule ^tajna-rajska-zahrada/?$ /vylet-rajska-zahrada.html [L]
-RewriteRule ^majdan-okruh-horne-oresany/?$ /vylet-majdan.html [L]
-RewriteRule ^prekazka/?$ /vylet-prekazka.html [L]
+# 301 redirect – odstrániť .html z blog a vylety
+RewriteRule ^blog\.html$ /blog [R=301,L]
+RewriteRule ^vylety\.html$ /vylety [R=301,L]
+
+# Blog články – nové URL /blog/slug
+RewriteRule ^blog/blog-mnaucin/?$ /blog-mnaucin.html [L]
+RewriteRule ^blog/kauza-fifinka-vrazedna-turistika-a-zlyhanie-statu/?$ /blog-fifinka.html [L]
+RewriteRule ^blog/cesta-snp-so-psom-pociatok-1-cast/?$ /blog-snp-pociatok.html [L]
+RewriteRule ^blog/cesta-snp-so-psom-priprava-2-cast/?$ /blog-snp-priprava.html [L]
+RewriteRule ^blog/cesta-snp-so-psom-vybava-3-cast/?$ /blog-snp-vybava.html [L]
+RewriteRule ^blog/ako-sa-ochranit-psa-pred-kliestami-zazracna-tabletka-neexistuje/?$ /blog-klieste.html [L]
+
+# Výlety – nové URL /vylety/slug
+RewriteRule ^vylety/tajna-rajska-zahrada/?$ /vylet-rajska-zahrada.html [L]
+RewriteRule ^vylety/majdan-okruh-horne-oresany/?$ /vylet-majdan.html [L]
+RewriteRule ^vylety/prekazka/?$ /vylet-prekazka.html [L]
+
+# Pôvodné WordPress URL – zachovanie SEO (301 → nové /blog/ alebo /vylety/ URL)
+RewriteRule ^ako-sa-ochranit-psa-pred-kliestami-zazracna-tabletka-neexistuje/?$ /blog/ako-sa-ochranit-psa-pred-kliestami-zazracna-tabletka-neexistuje [R=301,L]
+RewriteRule ^kauza-fifinka-vrazedna-turistika-a-zlyhanie-statu/?$ /blog/kauza-fifinka-vrazedna-turistika-a-zlyhanie-statu [R=301,L]
+RewriteRule ^cesta-snp-so-psom-pociatok-1-cast/?$ /blog/cesta-snp-so-psom-pociatok-1-cast [R=301,L]
+RewriteRule ^cesta-snp-so-psom-priprava-2-cast/?$ /blog/cesta-snp-so-psom-priprava-2-cast [R=301,L]
+RewriteRule ^cesta-snp-so-psom-vybava-3-cast/?$ /blog/cesta-snp-so-psom-vybava-3-cast [R=301,L]
+RewriteRule ^tajna-rajska-zahrada/?$ /vylety/tajna-rajska-zahrada [R=301,L]
+RewriteRule ^majdan-okruh-horne-oresany/?$ /vylety/majdan-okruh-horne-oresany [R=301,L]
+RewriteRule ^prekazka/?$ /vylety/prekazka [R=301,L]
 
 # Čisté URL (bez .html)
 RewriteCond %{REQUEST_FILENAME} !-f
