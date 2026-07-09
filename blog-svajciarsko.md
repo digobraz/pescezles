@@ -126,7 +126,7 @@ Inak všade, kde sme boli, boli psy vítané a sprevádzané úsmevmi ostatných
 
 ## Švajčiarsky prehľad — všetky miesta na mape
 
-🟠 oranžová = preplnené miesto (choď skoro ráno alebo mimo sezóny).
+🟠 oranžová = sem sme sa nedostali alebo sme to nestihli celé preskúmať.
 
 **Jazerá:** [Walensee](https://maps.app.goo.gl/3vVc6QtWP8dsYKYP7) · [Klöntalersee](https://www.google.com/maps/search/?api=1&query=Kl%C3%B6ntalersee) · [Oeschinensee](https://maps.app.goo.gl/czJWQ3VtCZvU2tcp9) · [Bachalpsee](https://maps.app.goo.gl/Dhth8yp445WV7xo16) · [Jazero Thun](https://www.google.com/maps/search/?api=1&query=Thunersee) · [Jazero Brienz](https://www.google.com/maps/search/?api=1&query=Brienzersee) · [Caumasee 🟠](https://www.google.com/maps/search/?api=1&query=Caumasee) · [Seealpsee](https://www.google.com/maps/search/?api=1&query=Seealpsee%20Wasserauen)
 
