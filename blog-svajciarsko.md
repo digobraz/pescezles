@@ -144,7 +144,7 @@ Orientačné sumy za celý pobyt na jednu osobu (+ pes + auto). ~90 % jedla sme 
 
 | Položka | Suma |
 |---|---|
-| Nocľahy celkom (len 1. a 5. deň) | 107 € |
+| Nocľahy celkom (len 1. a 5. deň) | 70 € |
 | Lanovky celkom (Stoos ~30 · Oeschinensee ~60 · Bachalpsee ~80) | ~170 € |
 | Nafta (Alhambra 1.9, celá cesta) | ~220 € |
 | Sladkosti, syry a sirupy domov | ~200 € |
@@ -154,7 +154,7 @@ Orientačné sumy za celý pobyt na jednu osobu (+ pes + auto). ~90 % jedla sme 
 | Diaľničná známka Rakúsko (10-dňová) | 12 € |
 | eSIM (20 GB) | 22 € |
 | Parkovanie celkom (~1 €/hod) | do 20 € |
-| **Celá dovolenka** | **≈ 1 000 €** |
+| **Celá dovolenka** | **≈ 900 €** |
 
 + zásoby jedla nakúpené doma na Slovensku. Vo švajčiarskych potravinách sú ceny až na mäso podobné ako u nás.
 
