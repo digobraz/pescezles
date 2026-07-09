@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="sk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Švajčiarsko so psom – low budget road trip (8 dní, do 1000 €) | PESCEZLES</title>
+    <meta name="description" content="8 dní, vyše 2000 km, jeden pes a rozpočet do tisícky. Ako prejsť najdrahšiu krajinu Európy takmer zadarmo – trasa, jazerá, ceny, tipy a checklist na cestu so psom.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] }, colors: {
+            pes: { 50: '#faf7f2', 100: '#f5ecd8', 200: '#e5d7ba' },
+            cez: { 500: '#ef4444', 600: '#dc2626', 700: '#b91c1c' },
+            les: { 500: '#0b6159', 600: '#09504a', 700: '#073f3a', 800: '#05302c', 900: '#04221f', 950: '#021513' }
+        } } } }
+    </script>
+    <!-- Google Analytics GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZY5E37SWR1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZY5E37SWR1');
+    </script>
+    <!-- Meta Pixel -->
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+      (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init','360367455699886');fbq('track','PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=360367455699886&ev=PageView&noscript=1"/></noscript>
+
+    <style>
+        /* Placeholder pre fotky – nahradí sa <img> keď prídu WebP */
+        .foto-ph {
+            display:flex; flex-direction:column; align-items:center; justify-content:center;
+            gap:.5rem; text-align:center; min-height:220px;
+            border:2px dashed #e5d7ba; border-radius:1rem; background:#faf7f2; color:#8a7f6b;
+            padding:1.5rem;
+        }
+        .foto-ph i { font-size:1.75rem; opacity:.7; }
+        .foto-ph span { font-size:.8rem; font-weight:600; letter-spacing:.02em; text-transform:uppercase; }
+        /* Mapové tlačidlá */
+        .map-btn { display:inline-flex; align-items:center; gap:.5rem; font-weight:600; font-size:.875rem;
+            padding:.5rem 1rem; border-radius:.75rem; background:#04221f; color:#fff; transition:background .2s,border-color .2s,color .2s; }
+        .map-btn:hover { background:#073f3a; }
+        .map-btn i { color:#f5ecd8; }
+        .map-btn.light { background:#fff; color:#04221f; border:1px solid #e5d7ba; }
+        .map-btn.light:hover { border-color:#0b6159; color:#dc2626; background:#fff; }
+        .map-btn.light i { color:#0b6159; }
+        /* Oranžová = preplnené miesto */
+        .map-btn.warn { color:#fbbf24; }
+        .map-btn.warn i { color:#fbbf24; }
+        .map-btn.light.warn { background:#fff; border-color:#f59e0b; color:#b45309; }
+        .map-btn.light.warn:hover { border-color:#d97706; color:#92400e; }
+        .map-btn.light.warn i { color:#f59e0b; }
+        /* Nocľah / rozpočet dňa */
+        .noc { display:inline-flex; align-items:center; gap:.6rem; background:#faf7f2; border:1px solid #e5d7ba;
+            border-radius:.75rem; padding:.5rem .9rem; font-size:.875rem; color:#05302c; }
+        .noc i { color:#0b6159; }
+        .noc .price { font-weight:800; color:#04221f; }
+        .noc .free { font-weight:800; color:#0b6159; }
+    </style>
+</head>
+<body class="bg-pes-50 text-les-950 font-sans antialiased">
+
+    <nav class="fixed w-full z-50 bg-white border-b border-pes-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/" class="block h-10 w-auto">
+                        <img src="./images/pescezles-500x91-1.png" alt="PESCEZLES" class="h-full w-auto object-contain">
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#pomoc" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Pomoc</a>
+                    <a href="misia" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Poslanie</a>
+                    <a href="index.html#prinos" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Prínos</a>
+                    <a href="vylety" class="text-sm font-bold uppercase tracking-wider text-les-950 hover:text-cez-600 transition-colors">Výlety</a>
+                    <a href="blog" class="text-sm font-bold uppercase tracking-wider text-les-600 transition-colors">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-20 bg-les-950 overflow-hidden relative">
+        <div class="absolute inset-0 z-0">
+            <!-- 📷 HERO FOTO: dočasne d5-5 (Oeschinensee). Vymeň za najlepší záber po výbere. -->
+            <img src="/BLOG/SWISS/foto/webp/d5-5.webp" alt="" class="w-full h-full object-cover opacity-25">
+            <div class="absolute inset-0 bg-gradient-to-br from-les-900/40 via-les-950/50 to-les-950/70"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <span class="inline-block py-2 px-4 rounded-full border border-les-500 text-pes-200 font-bold mb-4 tracking-widest text-sm uppercase">Blog · Road trip · Švajčiarsko</span>
+            <h1 class="text-4xl md:text-6xl font-black mb-6">Švajčiarsko na vlastnú päsť</h1>
+            <p class="text-pes-100 text-xl font-medium max-w-2xl mx-auto">8 dní, vyše 2 000 km, jeden pes a rozpočet do tisícky. Ako sa dá prejsť najdrahšia krajina Európy takmer zadarmo.</p>
+            <div class="mt-8 flex items-center justify-center gap-6 text-pes-200 text-sm">
+                <span><i class="fa-regular fa-calendar mr-2"></i>Júl 2026</span>
+                <span><i class="fa-regular fa-clock mr-2"></i>12 minút čítania</span>
+                <span><i class="fa-solid fa-dog mr-2"></i>so psom Hektorom</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <article class="bg-white p-8 md:p-14 rounded-3xl shadow-xl border border-pes-100 max-w-none">
+
+            <!-- ÚVOD -->
+            <p class="text-xl text-les-900 leading-relaxed font-medium mb-8">
+                Ak kdekoľvek na mapu Švajčiarska položíš prst, na 100 % trafíš miesto, ktoré ti odstrelí dekel. Z takmer každého miesta uvidíš impozantné skalné bralá, z ktorých striekajú masívne vodopády, dvoj-, troj-, štvortisícové mohutné hory s ľadovcami, rozkvitnuté pestrofarebné kvetiny, ktoré pokrývajú lúky, ale aj každú asfaltovú cestu, a v neposlednom rade rozprávkové azúrovo modré jazerá. Táto krajina je fakt svetový unikát — a je od nás vzdialená len 10 hodín autom.
+            </p>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Na Google mapách som mal vyznačených niekoľko švajčiarskych spotov so srdiečkom, ktoré som si pred rokmi ukladal pri „manifestácii". Pred pár dňami som s husacou kožou precitol, keď som tieto miesta postupne s Hektorom navštívil.
+            </p>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Tento výlet bol „spontánny" — myšlienka žila iba mesiac a na 100 % som sa rozhodol 2 týždne pred odchodom. Život ma naučil, že pokiaľ ide o zážitky a dobrodružstvo, nikdy sa nehovorí NIE — život je len jeden.
+            </p>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Moji kamoši Adam a Terezka prišli s týmto nápadom a mne prišlo fajn pridať sa k nim, čisto z taktických dôvodov. Keďže moje 20-ročné auto som posledné obdobie trápil u automechanika, vidina podpory v prípade najvyššej núdze bola pre mňa rozhodujúca. (Nakoniec sa obavy nenaplnili a celých vyše 2 000 km sme dali bez jediného zaváhania — vlastne jedno bolo, nešlo mi zatvoriť zadné okno… našťastie pár silných treskotov s dverami tento problém vyriešilo.)
+            </p>
+            <p class="text-lg text-les-800 leading-relaxed mb-8">
+                V tomto článku ti pre inšpiráciu opíšem naše vysnívané putovanie Švajčiarskom — trasu, postrehy, odporúčania, ceny, uvažovanie, tipy… Na konci pridám rýchly checklist, aby si na nič nezabudol!
+            </p>
+
+            <!-- LOW BUDGET -->
+            <h2 class="text-3xl font-black text-les-950 mt-12 mb-6">Low budget road trip so psom</h2>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Švajčiarsko je jedna z najdrahších krajín na svete, a preto sme sa na túto dobrodružnú výzvu patrične nachystali. Do môjho 20-ročného autíčka som si z dosiek vyrobil sofistikovaný úložný priestor a rozkladaciu posteľ v jednom, nabalil som si kvalitné jedlo na celý týždeň — ryžová kaša, proteín, ryby v konzervách či hotové jedlá od EXPRESS MENU… Práve tento základný setup mi ušetril stovky eur… Jedlo v reštauráciách a ubytovanie sú vo Švajčiarsku fakt vysoké. Nedávalo mi zmysel platiť stovky eur za ubytko (6 hodín spánku), keď sme aj tak chceli byť stále na cestách a v prírode — vyspali sme sa super aj v aute, zadarmo.
+            </p>
+            <figure class="mb-10">
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-10" data-gallery="d0">
+                <a href="/BLOG/SWISS/foto/webp/d0-0.webp" target="_blank" rel="noopener" title="d0-0" class="block group"><img src="/BLOG/SWISS/foto/webp/d0-0.webp" loading="lazy" alt="Švajčiarsko so psom – príprava auta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+            </div>
+            </figure>
+
+            <!-- 1. DEŇ -->
+            <h2 class="text-3xl font-black text-les-950 mt-12 mb-6"><span class="text-les-500">1. deň ·</span> Štart</h2>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Vyrazili sme ráno a naším cieľom bolo okolie Hallstattu v Rakúsku. Chceli sme sa dostať na polcestu — dať to celé naraz mi prišlo zbytočne náročné na prvý deň dovolenky. Po 4 hodinách cesty sme sa schladili v Hallstatte, kde sme našli super tiché miestečko pri vode. Sedel som na skale, jedol divoké čerešne, ktoré viseli nad nami, a hádzal som tanier Hektorovi, ktorý si prvýkrát v živote zaplával v rakúskych vodách. Potom sme sa presunuli do krásneho kempu Judenstein. Privítala nás sympatická „bordel mama", s ktorou som trošku pokoketoval už cez telefón — dala nám milú zľavu. Jedno parkovacie miesto pre karavan, kde sme sa zmestili s dvoma autami, nás stálo 65 €. Za pár hodinový parking pre 2 autá, 3 osoby a psa celkom pálka, ale neskôr som zistil, že toto je normálna suma, dokonca jedna z tých nižších. Musím vyzdvihnúť super čisté toalety, nové sprchy a zrkadlá — bolo to fakt na úrovni (až na toho plačúceho kojenca vo vedľajšom karavane…).
+            </p>
+            <figure class="mb-6">
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-10" data-gallery="d1">
+                <a href="/BLOG/SWISS/foto/webp/d1-1.webp" target="_blank" rel="noopener" title="d1-1" class="block group"><img src="/BLOG/SWISS/foto/webp/d1-1.webp" loading="lazy" alt="Švajčiarsko so psom – 1. deň – Hallstatt" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d1-1a.webp" target="_blank" rel="noopener" title="d1-1a" class="block group"><img src="/BLOG/SWISS/foto/webp/d1-1a.webp" loading="lazy" alt="Švajčiarsko so psom – 1. deň – Hallstatt" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d1-1b.webp" target="_blank" rel="noopener" title="d1-1b" class="block group"><img src="/BLOG/SWISS/foto/webp/d1-1b.webp" loading="lazy" alt="Švajčiarsko so psom – 1. deň – Hallstatt" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d1-1c.webp" target="_blank" rel="noopener" title="d1-1c" class="block group"><img src="/BLOG/SWISS/foto/webp/d1-1c.webp" loading="lazy" alt="Švajčiarsko so psom – 1. deň – Hallstatt" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+            </div>
+            </figure>
+            <div class="flex gap-3 mb-4 flex-wrap">
+                <a href="https://maps.app.goo.gl/EWXjHcEx9WH2DKCT7" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Kemp Judenstein</a>
+                <a href="https://maps.app.goo.gl/QgFbhZYHNiXqqjCs9" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Parkovisko Hallstatt</a>
+            </div>
+            <div class="noc mb-10"><i class="fa-solid fa-bed"></i><span><strong>Nocľah:</strong> Kemp Judenstein</span><span class="price">28 €</span></div>
+
+            <!-- 2. DEŇ -->
+            <h2 class="text-3xl font-black text-les-950 mt-12 mb-6"><span class="text-les-500">2. deň ·</span> Prvý kontakt</h2>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Na druhý deň sme sadli do auta a po ďalších 4 hodinách cesty cez nádhernú rakúsku prírodu sme konečne dorazili na našu prvú švajčiarsku zástavku. Krásne, obrovské azúrové jazero Walensee. (Najkrajšie jazero, aké som kedy dovtedy videl…) Nafúkali sme paddleboardy a išli sme sa schladiť. Bolo to to najlepšie zahájenie nášho švajčiarskeho výletu. Prehodil som pár slov so Švajčiarom, ktorého oslovila moja výkonná elektrická pumpa — tá mi môj 4,5 m paddleboard nafúkala za 8 minút. Po plavbe sme prišli k nášmu autu pri hlavnej ceste a zistil som, že som nezavrel okná… V aute som mal techniku, ktorá stála viac než celé auto, no našťastie nič nezmizlo. Následne sme sa zbalili a išli pozrieť ďalšie neďaleké jazero Klöntalersee, ktoré sme mali na zozname — netušili sme, že tam narazíme na krásny kemp. Pred kempom boli voľné parkovacie miesta pod stromami v krásnom náručí prírody — skalnaté bralá, vodopád — fantázia. Nikto za nami neprišiel, aby si vypýtal peniaze, a tak sme na takomto luxusnom mieste zakotvili a prenocovali na hulvátov, zdarma!
+            </p>
+            <figure class="mb-6">
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-10" data-gallery="d2">
+                <a href="/BLOG/SWISS/foto/webp/d2-2.webp" target="_blank" rel="noopener" title="d2-2" class="block group"><img src="/BLOG/SWISS/foto/webp/d2-2.webp" loading="lazy" alt="Švajčiarsko so psom – 2. deň – Walensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d2-2a.webp" target="_blank" rel="noopener" title="d2-2a" class="block group"><img src="/BLOG/SWISS/foto/webp/d2-2a.webp" loading="lazy" alt="Švajčiarsko so psom – 2. deň – Walensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d2-2b.webp" target="_blank" rel="noopener" title="d2-2b" class="block group"><img src="/BLOG/SWISS/foto/webp/d2-2b.webp" loading="lazy" alt="Švajčiarsko so psom – 2. deň – Walensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d2-2c.webp" target="_blank" rel="noopener" title="d2-2c" class="block group"><img src="/BLOG/SWISS/foto/webp/d2-2c.webp" loading="lazy" alt="Švajčiarsko so psom – 2. deň – Walensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d2-2d.webp" target="_blank" rel="noopener" title="d2-2d" class="block group"><img src="/BLOG/SWISS/foto/webp/d2-2d.webp" loading="lazy" alt="Švajčiarsko so psom – 2. deň – Walensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d2-2e.webp" target="_blank" rel="noopener" title="d2-2e" class="block group"><img src="/BLOG/SWISS/foto/webp/d2-2e.webp" loading="lazy" alt="Švajčiarsko so psom – 2. deň – Walensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d2-2f.webp" target="_blank" rel="noopener" title="d2-2f" class="block group"><img src="/BLOG/SWISS/foto/webp/d2-2f.webp" loading="lazy" alt="Švajčiarsko so psom – 2. deň – Walensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+            </div>
+            </figure>
+
+            <!-- BTW callout -->
+            <div class="bg-pes-100 border-l-4 border-cez-500 rounded-2xl p-6 mb-8">
+                <p class="flex items-center gap-2 font-black uppercase tracking-wider text-cez-700 text-sm mb-3"><i class="fa-solid fa-lightbulb"></i>BTW / Tip pred hranicami</p>
+                <p class="text-les-800 leading-relaxed m-0">
+                    Ešte pred Švajčiarskom ti odporúčam natankovať v Rakúsku do plna a vybaviť si eSIM-ku — ja som zvolil 20 GB za 20 eur… Trošku ma potrápilo nastavovanie eSIM na parkovisku, ale nakoniec sa mi to podarilo. Neviem, či je to bežné, ale nikto nás na hraniciach nezastavil, ani som žiadne hranice nepostrehol — možno preto, že sme išli prechodom, ktorý mi odporučil kamoš Maroš (vraj tam často nekontrolujú — a nekontrolovali nás ani na ceste späť).
+                </p>
+            </div>
+            <div class="flex gap-3 mb-4 flex-wrap">
+                <a href="https://maps.app.goo.gl/uLLn9Pcty6EqMsey9" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Prejazd cez Lichtenštajnsko</a>
+                <a href="https://maps.app.goo.gl/3vVc6QtWP8dsYKYP7" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Walensee</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Kl%C3%B6ntalersee" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Klöntalersee</a>
+            </div>
+            <div class="noc mb-10"><i class="fa-solid fa-bed"></i><span><strong>Nocľah:</strong> Klöntalersee — na hulvátov</span><span class="free">0 €</span></div>
+
+            <!-- 3. DEŇ -->
+            <h2 class="text-3xl font-black text-les-950 mt-12 mb-6"><span class="text-les-500">3. deň ·</span> Rozprávková jazda</h2>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Prebudili sme sa do krásneho rána. Urobili sme si raňajky na brehu nádherného jazera — sem sa ešte určite vrátime. Táto vodná plocha bola menšia (v porovnaní s Walensee), zato veľmi kľudná a menej preplnená ako úvodná Walensee. Po raňajkách sme nasadli do auta a vydali sa horou na 32 km púť, ktorá sa navždy zapíše do našich análov ako ten najkrajší prejazd autom, aký sme kedy zažili… Už v úplnom úvode, keď som pri kakajúcej pauze pri jazere natrafil na lúku plnú lesných jahôd, som vedel, že toto bude životná cesta. Cesta nám trvala niečo cez hodinku a viedla cez nádherné priesmyky, kopce a serpentíny po úzkej, ale kvalitnej asfaltovej ceste, kde sme stretali väčšinou len cyklistov… Trasa mala svoje čaro. Zastavoval som takmer stále a na každom kroku som sa kochal výhľadmi rovno z auta — vodopády, kravy, vysoké štíty hôr, skaly a voňavé byliny a kvety na každom kroku. Dostával som kŕče do sánky, ktorá bola hodinu v tom najširšom úsmeve, aký dokáže dať. Toto odporúčam absolvovať každému!
+            </p>
+            <div class="bg-cez-600 text-white rounded-2xl p-5 mb-8 flex items-start gap-3">
+                <i class="fa-solid fa-triangle-exclamation text-xl mt-0.5"></i>
+                <p class="m-0 font-semibold leading-relaxed">Pozor, táto trasa je cez víkend uzavretá!</p>
+            </div>
+            <div class="flex gap-3 mb-8 flex-wrap">
+                <a href="https://maps.app.goo.gl/NRD2925TwEeSudfVA" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Štart trasy (bod A)</a>
+                <a href="https://maps.app.goo.gl/RtgMrZ8pJ35HhmQG8" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Koniec trasy (bod B)</a>
+            </div>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Táto cesta ma na určitý čas poznačila a celkom vyviedla z miery. Prišli sme na cieľové miesto — Stoos. Na autopilota som lanovkou vyšiel hore (myslím, že to stálo okolo 26 € ja + pes, spiatočne). Bol som sklamaný, lebo jazierko, ktoré je hore, nie je prístupné na kúpanie ani pre ľudí, ani pre psov, a lanovky na krásne vrcholy Fronalpstock a Klingenstock psov neberú. Je pravda, že tam s nimi dokážeš vyjsť aj peši, ale to je hrebeňová túra na celý deň a my sme to mali len ako prechodnú stanicu… Takže sme sa poprechádzali v tieni a išli dolu — nabudúce by som tú hrebeňovku rád prešiel, pôjdeme peši a vyštartujeme skôr. Určite to stojí za to! Adam s Terezkou to absolvovali a tie fotky s výhľadmi boli fakt epické.
+            </p>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Nasledoval presun do mesta Lucern. Zaparkovali sme v nádhernom mestskom parku, kde sme rozložili variče a na bezdomovcov si urobili naloženú hostinu. Neďaleký camping nás odmietol prijať — vraj nemôžeme spať v aute, iba v karavane alebo v stane. Doteraz to nechápem… Každopádne toto bol škrt cez rozpočet, lebo do mesta prišla búrka a my sme nemali kde zaparkovať, keďže všetky mestské parkoviská majú zákaz spania v aute… V hustom daždi sme márne hľadali nejaké miesto mimo zákazu, nakoniec sme vyčerpaní dorazili k jednému hotelu na kopci mimo mesta, kde som urobil oči na recepčnú a spomenul môjho unaveného psíka v aute. Táto slečna bez váhania povolila spať na ich parkovisku, takže aj druhý deň sme mali for free. Ale dráma to bola riadna — v Lucerne by som si už druhýkrát neplánoval prespatie, resp. obvolal by som si kempy skôr. Inak mesto je krásne, ale moc sme si ho kvôli dažďu nestihli užiť.
+            </p>
+            <figure class="mb-6">
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-10" data-gallery="d3">
+                <a href="/BLOG/SWISS/foto/webp/d3-3.webp" target="_blank" rel="noopener" title="d3-3" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-3.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-3a.webp" target="_blank" rel="noopener" title="d3-3a" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-3a.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-3b.webp" target="_blank" rel="noopener" title="d3-3b" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-3b.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-3c.webp" target="_blank" rel="noopener" title="d3-3c" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-3c.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-3d.webp" target="_blank" rel="noopener" title="d3-3d" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-3d.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-3e.webp" target="_blank" rel="noopener" title="d3-3e" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-3e.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1450.webp" target="_blank" rel="noopener" title="d3-IMG_1450" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1450.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1453.webp" target="_blank" rel="noopener" title="d3-IMG_1453" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1453.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1454.webp" target="_blank" rel="noopener" title="d3-IMG_1454" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1454.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1461.webp" target="_blank" rel="noopener" title="d3-IMG_1461" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1461.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1463.webp" target="_blank" rel="noopener" title="d3-IMG_1463" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1463.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1469.webp" target="_blank" rel="noopener" title="d3-IMG_1469" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1469.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1479.webp" target="_blank" rel="noopener" title="d3-IMG_1479" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1479.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1481.webp" target="_blank" rel="noopener" title="d3-IMG_1481" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1481.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1499.webp" target="_blank" rel="noopener" title="d3-IMG_1499" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1499.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1508.webp" target="_blank" rel="noopener" title="d3-IMG_1508" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1508.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1515.webp" target="_blank" rel="noopener" title="d3-IMG_1515" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1515.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1529.webp" target="_blank" rel="noopener" title="d3-IMG_1529" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1529.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1533.webp" target="_blank" rel="noopener" title="d3-IMG_1533" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1533.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1540.webp" target="_blank" rel="noopener" title="d3-IMG_1540" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1540.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1542.webp" target="_blank" rel="noopener" title="d3-IMG_1542" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1542.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1545.webp" target="_blank" rel="noopener" title="d3-IMG_1545" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1545.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d3-IMG_1559.webp" target="_blank" rel="noopener" title="d3-IMG_1559" class="block group"><img src="/BLOG/SWISS/foto/webp/d3-IMG_1559.webp" loading="lazy" alt="Švajčiarsko so psom – 3. deň – čarovná cesta" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+            </div>
+            </figure>
+            <div class="flex gap-3 mb-4 flex-wrap">
+                <a href="https://maps.app.goo.gl/9QAGqryK6MBv8HmC9" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Mestský park Lucern</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=L%C3%B6wendenkmal%20Luzern" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Socha leva – Löwendenkmal</a>
+            </div>
+            <div class="noc mb-10"><i class="fa-solid fa-bed"></i><span><strong>Nocľah:</strong> Parkovisko pri hoteli, Lucern</span><span class="free">0 €</span></div>
+
+            <!-- 4. DEŇ -->
+            <h2 class="text-3xl font-black text-les-950 mt-12 mb-6"><span class="text-les-500">4. deň ·</span> Hmlistá krása</h2>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Ďalší deň začal rannou búrkou a hustým dažďom. Dokopy sme sa museli dať v podzemnej garáži, na jedinom suchom mieste v meste… Potom sme vyrazili smer Interlaken so zastávkou v kolosálnej tiesňave, kde nevadilo ani pršanie… Inak plánovali sme ísť cez horský priesmyk Sustenpass, ale ten tesne pred nami zavalil balvan, a tak sme museli ísť obchádzkou — ale aj tak sme toho moc nevideli kvôli hustej hmle. To, čo viditeľné bolo, vyzeralo ako z rozprávky — hmla pokrývala vrcholy hôr a rozlievala sa aj cez cestu, po ktorej sme išli. Občas vykuklo slnko a naskytli sa nám nádherné scenérie… Po dlhej ceste sme nakoniec dorazili do najkrajšieho mesta na svete, Interlakenu, kde nás čakal už náš kamarát a „domáci" Maroš. Ukázal nám mesto, park a aj epické miesto na spanie — síce mimo mesta, ale s luxusným výhľadom. Nocľah sme mali opäť zdarma. Toto bol výborný overený tip od Maroša, ktorý stál fakt za to!
+            </p>
+            <figure class="mb-6">
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-10" data-gallery="d4">
+                <a href="/BLOG/SWISS/foto/webp/d4-4.webp" target="_blank" rel="noopener" title="d4-4" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-4.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d4-IMG_1581.webp" target="_blank" rel="noopener" title="d4-IMG_1581" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-IMG_1581.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d4-IMG_1629.webp" target="_blank" rel="noopener" title="d4-IMG_1629" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-IMG_1629.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d4-IMG_1640.webp" target="_blank" rel="noopener" title="d4-IMG_1640" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-IMG_1640.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d4-IMG_1678.webp" target="_blank" rel="noopener" title="d4-IMG_1678" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-IMG_1678.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d4-IMG_1683.webp" target="_blank" rel="noopener" title="d4-IMG_1683" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-IMG_1683.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d4-IMG_1685.webp" target="_blank" rel="noopener" title="d4-IMG_1685" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-IMG_1685.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d4-IMG_1708.webp" target="_blank" rel="noopener" title="d4-IMG_1708" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-IMG_1708.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d4-IMG_1717.webp" target="_blank" rel="noopener" title="d4-IMG_1717" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-IMG_1717.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d4-IMG_1722.webp" target="_blank" rel="noopener" title="d4-IMG_1722" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-IMG_1722.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d4-IMG_1731.webp" target="_blank" rel="noopener" title="d4-IMG_1731" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-IMG_1731.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d4-IMG_1737.webp" target="_blank" rel="noopener" title="d4-IMG_1737" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-IMG_1737.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d4-IMG_1740.webp" target="_blank" rel="noopener" title="d4-IMG_1740" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-IMG_1740.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d4-IMG_1745.webp" target="_blank" rel="noopener" title="d4-IMG_1745" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-IMG_1745.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d4-IMG_1756.webp" target="_blank" rel="noopener" title="d4-IMG_1756" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-IMG_1756.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d4-IMG_1760.webp" target="_blank" rel="noopener" title="d4-IMG_1760" class="block group"><img src="/BLOG/SWISS/foto/webp/d4-IMG_1760.webp" loading="lazy" alt="Švajčiarsko so psom – 4. deň – Interlaken" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+            </div>
+            </figure>
+            <div class="flex gap-3 mb-4 flex-wrap">
+                <a href="https://maps.app.goo.gl/ESB7RS5UKvDHFqt66" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Tiesňava</a>
+                <a href="https://maps.app.goo.gl/YkCwHo5SF7g2UkZm6" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Sustenpass</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Interlaken" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Interlaken</a>
+                <a href="https://maps.app.goo.gl/8xdxJMntGjMaiNmv8" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-moon"></i>Spot na spanie</a>
+            </div>
+            <div class="noc mb-10"><i class="fa-solid fa-bed"></i><span><strong>Nocľah:</strong> Spot nad Interlakenom (Marošov tip)</span><span class="free">0 €</span></div>
+
+            <!-- 5. DEŇ -->
+            <h2 class="text-3xl font-black text-les-950 mt-12 mb-6"><span class="text-les-500">5. deň ·</span> Švajčiarsky vrchol</h2>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Ráno sme aj s Marošom vyrazili na Oeschinensee — jedno z najkrajších miest na planéte. To mi povedal Austrálčan, ktorého sme fotili a ktorý precestoval svet a vraj toto ešte nevidel… Bola to naozaj najkrajšia túra, akú som kedy s Hektorom absolvoval: epický nenáročný okruh okolo azúrového jazera, pričom nad tebou sú dookola obrovské zasnežené štíty hôr… Prechádzaš vodopádmi a pestrofarebnými lúkami… neskutočný zážitok. Priamo pri jazere je veľa ohnísk. V jazere sa môžeš okúpať ty aj tvoj pes… Toto vidieť na vlastné oči bol skvelý zážitok, ktorý odporúčam každému — áno, bolo tam aj dosť ľudí, ale stálo to za to, fakt! Cena lanovky bola okolo 60 € spiatočne (dá sa prejsť aj peši bez lanovky, treba ale vyraziť skôr… my sme si priplatili a neľutovali sme!).
+            </p>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Po túre sme si dali národný pokrm, no spokojní sme neboli — prvé aj posledné stravovanie vo švajčiarskej reštike… Adam s Terezkou usúdili, že nič krajšie už neuvidia, a spontánne sa rozhodli ísť domov. Kúpili si 3-metrovú rastlinu do svojho nového hniezdočka lásky a odišli. Moja umbakarna zmizla. Presunuli sme sa do jediného voľného kempu v Interlakene po tom, čo som to obehal všetko — lebo telefón nikto nedvíhal… Večer som si užil v pomalom tempe a nafúkal som si paddleboard s tým, že pôjdeme ráno na vec…
+            </p>
+            <figure class="mb-6">
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-10" data-gallery="d5">
+                <a href="/BLOG/SWISS/foto/webp/d5-5.webp" target="_blank" rel="noopener" title="d5-5" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-5.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_1775.webp" target="_blank" rel="noopener" title="d5-IMG_1775" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_1775.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_1791.webp" target="_blank" rel="noopener" title="d5-IMG_1791" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_1791.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_1809.webp" target="_blank" rel="noopener" title="d5-IMG_1809" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_1809.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_1861.webp" target="_blank" rel="noopener" title="d5-IMG_1861" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_1861.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_1870.webp" target="_blank" rel="noopener" title="d5-IMG_1870" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_1870.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_1872.webp" target="_blank" rel="noopener" title="d5-IMG_1872" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_1872.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_1876.webp" target="_blank" rel="noopener" title="d5-IMG_1876" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_1876.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_1941.webp" target="_blank" rel="noopener" title="d5-IMG_1941" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_1941.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_1974.webp" target="_blank" rel="noopener" title="d5-IMG_1974" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_1974.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_1987.webp" target="_blank" rel="noopener" title="d5-IMG_1987" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_1987.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_1999.webp" target="_blank" rel="noopener" title="d5-IMG_1999" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_1999.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2002.webp" target="_blank" rel="noopener" title="d5-IMG_2002" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2002.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2004.webp" target="_blank" rel="noopener" title="d5-IMG_2004" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2004.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2006.webp" target="_blank" rel="noopener" title="d5-IMG_2006" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2006.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2007.webp" target="_blank" rel="noopener" title="d5-IMG_2007" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2007.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2009.webp" target="_blank" rel="noopener" title="d5-IMG_2009" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2009.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2010.webp" target="_blank" rel="noopener" title="d5-IMG_2010" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2010.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2011.webp" target="_blank" rel="noopener" title="d5-IMG_2011" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2011.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2014.webp" target="_blank" rel="noopener" title="d5-IMG_2014" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2014.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2029.webp" target="_blank" rel="noopener" title="d5-IMG_2029" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2029.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2032.webp" target="_blank" rel="noopener" title="d5-IMG_2032" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2032.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2036.webp" target="_blank" rel="noopener" title="d5-IMG_2036" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2036.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2040.webp" target="_blank" rel="noopener" title="d5-IMG_2040" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2040.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2043.webp" target="_blank" rel="noopener" title="d5-IMG_2043" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2043.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2054.webp" target="_blank" rel="noopener" title="d5-IMG_2054" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2054.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2061.webp" target="_blank" rel="noopener" title="d5-IMG_2061" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2061.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2064.webp" target="_blank" rel="noopener" title="d5-IMG_2064" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2064.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2071.webp" target="_blank" rel="noopener" title="d5-IMG_2071" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2071.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d5-IMG_2110.webp" target="_blank" rel="noopener" title="d5-IMG_2110" class="block group"><img src="/BLOG/SWISS/foto/webp/d5-IMG_2110.webp" loading="lazy" alt="Švajčiarsko so psom – 5. deň – Oeschinensee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+            </div>
+            </figure>
+            <div class="flex gap-3 mb-4 flex-wrap">
+                <a href="https://maps.app.goo.gl/czJWQ3VtCZvU2tcp9" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Oeschinensee</a>
+                <a href="https://maps.app.goo.gl/tTSKUKj7EF4ZAW616" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-campground"></i>Kemp Interlaken</a>
+            </div>
+            <div class="noc mb-10"><i class="fa-solid fa-bed"></i><span><strong>Nocľah:</strong> Kemp Interlaken</span><span class="price">42 €</span><span class="text-les-600 text-xs">· 1 os. + pes + auto</span></div>
+
+            <!-- 6. DEŇ -->
+            <h2 class="text-3xl font-black text-les-950 mt-12 mb-6"><span class="text-les-500">6. deň ·</span> Stratené pádlo a prví čínski psi</h2>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Ráno som zistil, že nemám pádlo — asi som ho stratil vo Walensee — a tak som si našťastie jedno požičal od nemeckej susedky v kempe… Keďže bol o 12:00 checkout, vyrazili sme na hladinu už o 8:00 a boli sme na celom jazere Thun úplne sami. Riadne sme si zamakali a našli krásne miesta, na ktoré sa peši nedá dostať — super miesto aj s opekaniskom prístupné len po vode, ale aj obrovský vodopád vlievajúci sa priamo do jazera Thun. Po rannej plavbe sme sadli do auta a vyrazili pozrieť legendárny Lauterbrunnen — údolie vodopádov. Miesto bolo krásne — dedinka medzi obrovskými bralami, odkiaľ tečú desiatky vodopádov. No bolo tam milión ľudí a nedalo sa zaparkovať, a tak sme si atmosféru užili iba z auta a pomaly sa presunuli do Grindelwaldu — opäť krásna dedinka, z ktorej sa dá lanovkou (aj peši) dostať na jazero, ktoré sme mali v checkliste: Bachalpsee. Spiatočná cesta lanovkou, ktorá trvala 25 minút, stála okolo 80 eur — ale za mňa stála za to, ušetrila hodiny cesty a užiješ si dlhú jazdu na lanovke ako nikdy. Od lanovky trvá túra k jazeru asi hodinku. Cesta je super — taká prechádzka v oblakoch, vidíš okolo seba štíty štvortisíciek s ľadovcami… bolo to fakt grandiózne. Tak ako samotné jazero obklopené trsmi machového trávnika s pestrofarebnými kvetmi, do ktorých som si ľahol a s úsmevom odfukoval… O 16:50 som precitol a spomenul si, že posledná lanovka dolu ide o 17:30 (pešia cesta trvá 2,5 hodiny…). Po tomto zistení sme sa dali do klusu a nakoniec sme sa stihli aj vyfotiť na krásnej vyhliadke. Pre veľký počet ľudí ju natiahli do 18:00 a my sme mali 30 minút na pozorovanie nádhernej scenérie z Grindelwald First.
+            </p>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Cestou späť sa k nám pridala mladá Číňanka Danny Li, ktorú som zbalil na Hektora. Následne išla so mnou do lanovky, ktorá sa 2× zasekla… Keďže sme mali čas, tak sme sa hodili do reči a zistil som, že doma má 4 psíkov. A tak som neváhal a ukázal jej DOGYPT! Výsledok? Máme v sieti prvých čínskych psov :) Danny som autom hodil do Interlakenu — bola z toho celá dosť happy. Večer mi napísala email, že to bol jej najkrajší životný zážitok. You are welcome, sweetie! Je sranda, že v 20 rokoch si takto sama chodí po svete, fotí sa s cudzincami a ustráchanej mame hovorí, že sú to jej kamoši, hahaha.
+            </p>
+            <!-- DOGYPT vsuvka – doplniť sem po odsúhlasení textovej časti (fáza 5). Zatiaľ len Matejova vlastná zmienka vyššie. -->
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Tento plodný deň sme zakončili s Marošom a Markom pri brehu jazera Brienz, kde sme si urobili epickú opekačku — toto boli gastro hody so všetkým, čo k tomu patrí — kvalitný švajčiarsky steak, homemade omáčka, grilovaná zelenina, zemiaky a aj nahé domáce slečny, ktoré sa o polnoci prišli okúpať a potom aj zohriať k nášmu ohníčku. Bola to mega rozlúčka so super ľuďmi. Prespali sme v aute na parkovisku, ktoré patrilo Markovmu šéfovi — ďalší free nocľah.
+            </p>
+            <figure class="mb-6">
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-10" data-gallery="d6">
+                <a href="/BLOG/SWISS/foto/webp/d6-6.webp" target="_blank" rel="noopener" title="d6-6" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-6.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2134.webp" target="_blank" rel="noopener" title="d6-IMG_2134" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2134.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2139.webp" target="_blank" rel="noopener" title="d6-IMG_2139" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2139.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2147.webp" target="_blank" rel="noopener" title="d6-IMG_2147" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2147.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2155.webp" target="_blank" rel="noopener" title="d6-IMG_2155" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2155.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2162.webp" target="_blank" rel="noopener" title="d6-IMG_2162" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2162.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2189.webp" target="_blank" rel="noopener" title="d6-IMG_2189" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2189.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2193.webp" target="_blank" rel="noopener" title="d6-IMG_2193" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2193.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2199.webp" target="_blank" rel="noopener" title="d6-IMG_2199" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2199.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2206.webp" target="_blank" rel="noopener" title="d6-IMG_2206" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2206.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2219.webp" target="_blank" rel="noopener" title="d6-IMG_2219" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2219.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2253.webp" target="_blank" rel="noopener" title="d6-IMG_2253" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2253.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2276.webp" target="_blank" rel="noopener" title="d6-IMG_2276" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2276.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2283.webp" target="_blank" rel="noopener" title="d6-IMG_2283" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2283.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2304.webp" target="_blank" rel="noopener" title="d6-IMG_2304" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2304.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2311.webp" target="_blank" rel="noopener" title="d6-IMG_2311" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2311.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2338.webp" target="_blank" rel="noopener" title="d6-IMG_2338" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2338.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2341.webp" target="_blank" rel="noopener" title="d6-IMG_2341" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2341.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2350.webp" target="_blank" rel="noopener" title="d6-IMG_2350" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2350.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2353.webp" target="_blank" rel="noopener" title="d6-IMG_2353" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2353.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2356.webp" target="_blank" rel="noopener" title="d6-IMG_2356" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2356.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2371.webp" target="_blank" rel="noopener" title="d6-IMG_2371" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2371.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2376.webp" target="_blank" rel="noopener" title="d6-IMG_2376" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2376.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2386.webp" target="_blank" rel="noopener" title="d6-IMG_2386" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2386.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d6-IMG_2389.webp" target="_blank" rel="noopener" title="d6-IMG_2389" class="block group"><img src="/BLOG/SWISS/foto/webp/d6-IMG_2389.webp" loading="lazy" alt="Švajčiarsko so psom – 6. deň – Lauterbrunnen, Grindelwald" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+            </div>
+            </figure>
+            <div class="flex gap-3 mb-4 flex-wrap">
+                <a href="https://www.google.com/maps/search/?api=1&query=Thunersee" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Jazero Thun</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Lauterbrunnen" target="_blank" rel="noopener" class="map-btn warn"><i class="fa-solid fa-location-dot"></i>Lauterbrunnen</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Grindelwald" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Grindelwald</a>
+                <a href="https://maps.app.goo.gl/Dhth8yp445WV7xo16" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Bachalpsee</a>
+            </div>
+            <div class="noc mb-10"><i class="fa-solid fa-bed"></i><span><strong>Nocľah:</strong> Parkovisko pri Brienzi</span><span class="free">0 €</span></div>
+
+            <!-- 7. DEŇ -->
+            <h2 class="text-3xl font-black text-les-950 mt-12 mb-6"><span class="text-les-500">7. deň ·</span> Späť k hraniciam</h2>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Tento deň sme si to namierili spať k hraniciam, smer domov… Bola to dosť dlhá cesta z Interlakenu. Prechádzali sme cez dychberúci Sustenpass — prejazdy v 2 200 m n. m. Potom nasledovali trošku fádnejšie cesty k jazeru Caumasee, ale tam bolo toľko národa, že sa nikde nedalo zaparkovať. Keďže bol dosť úpek, chcel som Hektora patrične schladiť, a keďže nám nevyšlo jedno jazero, tak sme pokračovali až do Walensee, kde sme sa išli 2× schladiť. Tentoraz bolo jazero dosť rozbúrené a všade bolo veľa ľudí… Každopádne s Hektorom sme si to užili dosýta a tu vznikla myšlienka zostať ešte jednu noc navyše a ráno absolvovať poslednú švajčiarsku túru k jazeru Seealpsee (čo sme mali na checkliste). Našiel som skvelý FREE parking spot v apke Park4Night — v lese, za dedinou, kde sme si s Hektorom urobili krásny kľudný večer. Vychutnal som si rajčinovú polievku a v kľude pri Buddhovej flaute naplánoval rannú akciu.
+            </p>
+            <div class="flex gap-3 mb-4 flex-wrap">
+                <a href="https://www.google.com/maps/search/?api=1&query=Caumasee" target="_blank" rel="noopener" class="map-btn warn"><i class="fa-solid fa-location-dot"></i>Caumasee</a>
+                <a href="https://maps.app.goo.gl/3vVc6QtWP8dsYKYP7" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Walensee</a>
+                <a href="https://maps.app.goo.gl/nxQzjknuXqyuEzkm6?g_st=ic" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-moon"></i>Nocľah pri dedinke Lienz</a>
+            </div>
+            <div class="noc mb-6"><i class="fa-solid fa-bed"></i><span><strong>Nocľah:</strong> Free spot v lese pri Lienz</span><span class="free">0 €</span></div>
+            <figure class="mb-10">
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-10" data-gallery="d7">
+                <a href="/BLOG/SWISS/foto/webp/d7-7.webp" target="_blank" rel="noopener" title="d7-7" class="block group"><img src="/BLOG/SWISS/foto/webp/d7-7.webp" loading="lazy" alt="Švajčiarsko so psom – 7. deň – Sustenpass" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d7-IMG_2410.webp" target="_blank" rel="noopener" title="d7-IMG_2410" class="block group"><img src="/BLOG/SWISS/foto/webp/d7-IMG_2410.webp" loading="lazy" alt="Švajčiarsko so psom – 7. deň – Sustenpass" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d7-IMG_2413.webp" target="_blank" rel="noopener" title="d7-IMG_2413" class="block group"><img src="/BLOG/SWISS/foto/webp/d7-IMG_2413.webp" loading="lazy" alt="Švajčiarsko so psom – 7. deň – Sustenpass" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d7-IMG_2426.webp" target="_blank" rel="noopener" title="d7-IMG_2426" class="block group"><img src="/BLOG/SWISS/foto/webp/d7-IMG_2426.webp" loading="lazy" alt="Švajčiarsko so psom – 7. deň – Sustenpass" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d7-IMG_2485.webp" target="_blank" rel="noopener" title="d7-IMG_2485" class="block group"><img src="/BLOG/SWISS/foto/webp/d7-IMG_2485.webp" loading="lazy" alt="Švajčiarsko so psom – 7. deň – Sustenpass" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d7-IMG_2506.webp" target="_blank" rel="noopener" title="d7-IMG_2506" class="block group"><img src="/BLOG/SWISS/foto/webp/d7-IMG_2506.webp" loading="lazy" alt="Švajčiarsko so psom – 7. deň – Sustenpass" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+            </div>
+            </figure>
+
+            <!-- 8. DEŇ -->
+            <h2 class="text-3xl font-black text-les-950 mt-12 mb-6"><span class="text-les-500">8. deň ·</span> Posledná túra — Seealpsee</h2>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Posledný deň vo Švajčiarsku bol v znamení skorého budíčka a prejazdu na parkovisko pri Seealpsee — Wasserauen. Tu sme nechali auto, natiahli parkovné na 3 hodiny a vydali sa na pešiaka k jazeru — cesta krásna, dosť strmá, ale cieľ stál za to: ďalšie nádherné jazero medzi vysokými končiarmi hôr… Dali sme si tam luxusnú desiatu na brehu. Mapy.cz tvrdili, že trasa trvá hodinu, no my sme to dali našim vražedným tempom za 25 minút… takže sme tam mohli ležať a baviť sa o to dlhšie. Hektor si užil dlhé aportovanie a takto sa symbolicky rozlúčil so Švajčiarskom… Po príchode na parkovisko mi zostávalo ešte 11 minút do uplynutia parkovného. BTW cena za 3 hodiny bola okolo 4 € — dosť tragikomické v porovnaní so slovenskými Tatrami… Po tejto výživnej túre sme sadli do auta a čakala nás 10 hodín dlhá cesta domov… Naspäť sme išli cez depresívne Nemecko, na diaľnici som si musel zdriemnuť kvôli mikrospánkom, s ktorými som chvíľu skúšal bojovať… Nakoniec sme dorazili okolo pol desiatej večer — živí, zdraví, ale unavení a spokojní, keď nás privítali naši dvaja kocúrici.
+            </p>
+            <figure class="mb-6">
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-10" data-gallery="d8">
+                <a href="/BLOG/SWISS/foto/webp/d8-8.webp" target="_blank" rel="noopener" title="d8-8" class="block group"><img src="/BLOG/SWISS/foto/webp/d8-8.webp" loading="lazy" alt="Švajčiarsko so psom – 8. deň – Seealpsee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d8-IMG_2528.webp" target="_blank" rel="noopener" title="d8-IMG_2528" class="block group"><img src="/BLOG/SWISS/foto/webp/d8-IMG_2528.webp" loading="lazy" alt="Švajčiarsko so psom – 8. deň – Seealpsee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d8-IMG_2557.webp" target="_blank" rel="noopener" title="d8-IMG_2557" class="block group"><img src="/BLOG/SWISS/foto/webp/d8-IMG_2557.webp" loading="lazy" alt="Švajčiarsko so psom – 8. deň – Seealpsee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d8-IMG_2572.webp" target="_blank" rel="noopener" title="d8-IMG_2572" class="block group"><img src="/BLOG/SWISS/foto/webp/d8-IMG_2572.webp" loading="lazy" alt="Švajčiarsko so psom – 8. deň – Seealpsee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d8-IMG_2587.webp" target="_blank" rel="noopener" title="d8-IMG_2587" class="block group"><img src="/BLOG/SWISS/foto/webp/d8-IMG_2587.webp" loading="lazy" alt="Švajčiarsko so psom – 8. deň – Seealpsee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d8-IMG_2597.webp" target="_blank" rel="noopener" title="d8-IMG_2597" class="block group"><img src="/BLOG/SWISS/foto/webp/d8-IMG_2597.webp" loading="lazy" alt="Švajčiarsko so psom – 8. deň – Seealpsee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d8-IMG_2598.webp" target="_blank" rel="noopener" title="d8-IMG_2598" class="block group"><img src="/BLOG/SWISS/foto/webp/d8-IMG_2598.webp" loading="lazy" alt="Švajčiarsko so psom – 8. deň – Seealpsee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d8-IMG_2609.webp" target="_blank" rel="noopener" title="d8-IMG_2609" class="block group"><img src="/BLOG/SWISS/foto/webp/d8-IMG_2609.webp" loading="lazy" alt="Švajčiarsko so psom – 8. deň – Seealpsee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d8-IMG_2612.webp" target="_blank" rel="noopener" title="d8-IMG_2612" class="block group"><img src="/BLOG/SWISS/foto/webp/d8-IMG_2612.webp" loading="lazy" alt="Švajčiarsko so psom – 8. deň – Seealpsee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d8-IMG_2627.webp" target="_blank" rel="noopener" title="d8-IMG_2627" class="block group"><img src="/BLOG/SWISS/foto/webp/d8-IMG_2627.webp" loading="lazy" alt="Švajčiarsko so psom – 8. deň – Seealpsee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d8-IMG_2657.webp" target="_blank" rel="noopener" title="d8-IMG_2657" class="block group"><img src="/BLOG/SWISS/foto/webp/d8-IMG_2657.webp" loading="lazy" alt="Švajčiarsko so psom – 8. deň – Seealpsee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+                <a href="/BLOG/SWISS/foto/webp/d8-IMG_2670.webp" target="_blank" rel="noopener" title="d8-IMG_2670" class="block group"><img src="/BLOG/SWISS/foto/webp/d8-IMG_2670.webp" loading="lazy" alt="Švajčiarsko so psom – 8. deň – Seealpsee" class="w-full aspect-square object-cover rounded-lg border border-pes-200 group-hover:opacity-90 transition"></a>
+            </div>
+            </figure>
+            <div class="flex gap-3 mb-4 flex-wrap">
+                <a href="https://www.google.com/maps/search/?api=1&query=Seealpsee%20Wasserauen" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Seealpsee — Wasserauen</a>
+            </div>
+            <div class="noc mb-10"><i class="fa-solid fa-car-side"></i><span><strong>Nocľah:</strong> cesta domov (10 h)</span><span class="free">—</span></div>
+
+            <!-- ZÁVER -->
+            <h2 class="text-3xl font-black text-les-950 mt-12 mb-6">Záver</h2>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Tento roadtrip hodnotím na výbornú — všetko nám vyšlo nad očakávania a domov sme sa vrátili navždy poznačení krásnou švajčiarskou prírodou, ktorá v nás bude žiť ešte dlho. Za tento výlet som spravil cez 1 400 fotiek (na väčšine je môj pes Hektor), ktorý to všetko zvládol na výbornú. Naše autíčko sme riadne otestovali motoricky aj prakticky na spacie účely, a tak sme ready na ďalšiu plánovanú adventúru po Slovensku ešte toto leto!
+            </p>
+            <p class="text-lg text-les-800 leading-relaxed mb-6">
+                Švajčiarsko je krásna krajina, ktorá sa dá pobehať aj s nízkym rozpočtom. Nás celá dovolenka vyšla do tisícky, ale ak by sme jedli v reštikách a spali v hoteloch, vyšlo by to kľudne aj na 3× viac… Úsmevné je, že až na mäso boli v potravinách takmer totožné sumy ako u nás — sú o niečo drahšie, ale v porovnaní s platmi je to pekný výsmech… V akcii tam nakúpite za super ceny o mnoho kvalitnejšie veci ako u nás. Takisto bolo super, že voda tiekla v každej dedinke, takže od smädu vo Švajčiarsku určite nezomrieš.
+            </p>
+            <p class="text-lg text-les-800 leading-relaxed mb-10">
+                Inak všade, kde sme boli, boli psy vítané a sprevádzané úsmevmi ostatných ľudí — psíčkarov bolo všade naozaj dosť, čo sa mi veľmi páčilo.
+            </p>
+
+            <!-- ŠVAJČIARSKY PREHĽAD – všetky miesta na mape -->
+            <div class="bg-pes-100 rounded-3xl p-8 md:p-10 mt-4">
+                <p class="flex items-center gap-3 text-2xl md:text-3xl font-black text-les-950 mb-2"><i class="fa-solid fa-map-location-dot text-cez-600"></i>Švajčiarsky prehľad</p>
+                <p class="text-les-700 mb-8">Všetky miesta z nášho putovania na jednom mieste — klikni a otvorí sa mapa. <span class="text-amber-600 font-semibold">Oranžová</span> = sem sme sa nedostali alebo sme to nestihli celé preskúmať.</p>
+
+                <h3 class="text-sm font-black uppercase tracking-wider text-les-600 mb-3"><i class="fa-solid fa-water mr-2"></i>Jazerá</h3>
+                <div class="flex gap-3 mb-7 flex-wrap">
+                    <a href="https://maps.app.goo.gl/3vVc6QtWP8dsYKYP7" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Walensee</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Kl%C3%B6ntalersee" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Klöntalersee</a>
+                    <a href="https://maps.app.goo.gl/czJWQ3VtCZvU2tcp9" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Oeschinensee</a>
+                    <a href="https://maps.app.goo.gl/Dhth8yp445WV7xo16" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Bachalpsee</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Thunersee" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Jazero Thun</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Brienzersee" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Jazero Brienz</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Caumasee" target="_blank" rel="noopener" class="map-btn light warn"><i class="fa-solid fa-location-dot"></i>Caumasee</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Seealpsee%20Wasserauen" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Seealpsee</a>
+                </div>
+
+                <h3 class="text-sm font-black uppercase tracking-wider text-les-600 mb-3"><i class="fa-solid fa-house-chimney mr-2"></i>Mestá a dediny</h3>
+                <div class="flex gap-3 mb-7 flex-wrap">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Luzern" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Lucern</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Interlaken" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Interlaken</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Lauterbrunnen" target="_blank" rel="noopener" class="map-btn light warn"><i class="fa-solid fa-location-dot"></i>Lauterbrunnen</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Grindelwald" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Grindelwald</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Stoos%20Switzerland" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Stoos</a>
+                </div>
+
+                <h3 class="text-sm font-black uppercase tracking-wider text-les-600 mb-3"><i class="fa-solid fa-mountain mr-2"></i>Vodopády a priesmyky</h3>
+                <div class="flex gap-3 mb-7 flex-wrap">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Oltschibachfall" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Oltschibachfall</a>
+                    <a href="https://maps.app.goo.gl/ESB7RS5UKvDHFqt66" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Tiesňava</a>
+                    <a href="https://maps.app.goo.gl/YkCwHo5SF7g2UkZm6" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Sustenpass</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=L%C3%B6wendenkmal%20Luzern" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Socha leva – Löwendenkmal</a>
+                </div>
+
+                <h3 class="text-sm font-black uppercase tracking-wider text-les-600 mb-3"><i class="fa-solid fa-moon mr-2"></i>Kde sme spali</h3>
+                <div class="flex gap-3 flex-wrap">
+                    <a href="https://maps.app.goo.gl/EWXjHcEx9WH2DKCT7" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-campground"></i>Kemp Judenstein</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Kl%C3%B6ntalersee" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-campground"></i>Klöntalersee</a>
+                    <a href="https://maps.app.goo.gl/9QAGqryK6MBv8HmC9" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-campground"></i>Lucern – park/hotel</a>
+                    <a href="https://maps.app.goo.gl/8xdxJMntGjMaiNmv8" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-campground"></i>Spot Interlaken</a>
+                    <a href="https://maps.app.goo.gl/tTSKUKj7EF4ZAW616" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-campground"></i>Kemp Interlaken</a>
+                    <a href="https://maps.app.goo.gl/nxQzjknuXqyuEzkm6?g_st=ic" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-campground"></i>Free spot pri Lienz</a>
+                </div>
+            </div>
+
+            <!-- ROZPOČET -->
+            <div class="bg-white border-2 border-pes-200 rounded-3xl p-8 md:p-10 mt-8">
+                <p class="flex items-center gap-3 text-2xl md:text-3xl font-black text-les-950 mb-2"><i class="fa-solid fa-wallet text-cez-600"></i>Rozpočet — čo nás to celé stálo</p>
+                <p class="text-les-700 mb-6">Orientačné sumy za celý pobyt na jednu osobu (+ pes + auto). Väčšinu jedla (~90 %) sme kúpili doma na Slovensku, takže vo Švajčiarsku sme míňali minimum.</p>
+                <div class="divide-y divide-pes-100">
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-bed text-les-500 mr-2 w-5 text-center"></i>Nocľahy celkom <span class="text-les-600 text-sm">— len 1. a 5. deň, zvyšok zadarmo</span></span><span class="font-black text-les-950 whitespace-nowrap">70 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-cable-car text-les-500 mr-2 w-5 text-center"></i>Lanovky celkom <span class="text-les-600 text-sm">— Stoos ~30 · Oeschinensee ~60 · Bachalpsee ~80</span></span><span class="font-black text-les-950 whitespace-nowrap">~170 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-gas-pump text-les-500 mr-2 w-5 text-center"></i>Nafta <span class="text-les-600 text-sm">— Alhambra 1.9, celá cesta</span></span><span class="font-black text-les-950 whitespace-nowrap">~220 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-basket-shopping text-les-500 mr-2 w-5 text-center"></i>Sladkosti, syry a sirupy domov</span><span class="font-black text-les-950 whitespace-nowrap">~200 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-cart-shopping text-les-500 mr-2 w-5 text-center"></i>Jedlo kúpené vo Švajčiarsku</span><span class="font-black text-les-950 whitespace-nowrap">do 100 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-utensils text-les-500 mr-2 w-5 text-center"></i>Reštaurácie celkom</span><span class="font-black text-les-950 whitespace-nowrap">28 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-road text-les-500 mr-2 w-5 text-center"></i>Diaľničná známka Švajčiarsko <span class="text-les-600 text-sm">— ročná</span></span><span class="font-black text-les-950 whitespace-nowrap">42 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-road text-les-500 mr-2 w-5 text-center"></i>Diaľničná známka Rakúsko <span class="text-les-600 text-sm">— 10-dňová</span></span><span class="font-black text-les-950 whitespace-nowrap">12 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-sim-card text-les-500 mr-2 w-5 text-center"></i>eSIM <span class="text-les-600 text-sm">— 20 GB</span></span><span class="font-black text-les-950 whitespace-nowrap">22 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-square-parking text-les-500 mr-2 w-5 text-center"></i>Parkovanie celkom <span class="text-les-600 text-sm">— ~1 €/hod skoro všade</span></span><span class="font-black text-les-950 whitespace-nowrap">do 20 €</span></div>
+                </div>
+                <div class="flex justify-between items-baseline mt-6 pt-5 border-t-2 border-les-950 gap-4">
+                    <span class="text-les-950 font-black text-lg">Celá dovolenka</span>
+                    <span class="font-black text-cez-600 text-2xl whitespace-nowrap">≈ 900 €</span>
+                </div>
+                <p class="text-les-600 text-sm mt-4 m-0">+ zásoby jedla nakúpené doma na Slovensku (~90 % stravy). Vo švajčiarskych potravinách sú ceny až na mäso podobné ako u nás — v akcii nakúpiš kvalitnejšie veci za super ceny.</p>
+            </div>
+
+            <!-- CHECKLIST bublina -->
+            <div class="bg-les-950 text-white p-8 md:p-10 rounded-3xl mt-8">
+                <p class="flex items-center gap-3 text-2xl md:text-3xl font-black mb-6"><i class="fa-solid fa-list-check text-les-500"></i>Cestovné tipy — checklist</p>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Bývaj v aute/stane + samostravovanie = obrovská úspora</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Nezabudni na cestovné poistenie!</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Maj platnú vakcináciu — besnota, nič <strong>VIAC</strong> nepotrebuješ, ak máš psa (možno zapísané odčervenie…), a nezabudni si pas pre istotu</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Stiahni si offline Mapy.cz a aj Park4Night!</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Stiahni si apku <strong>EasyPark</strong> — parkovné vybavíš z mobilu (~1 €/hod skoro všade)</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Kúp, aktivuj a nastav si švajčiarsku eSIM-ku ešte v Rakúsku</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Takisto tankuj v Rakúsku — najlepšie mimo diaľnice</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Ak chceš nezabudnuteľný zážitok, absolvuj čarovnú cestu (3. deň)</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Ak máš rád šoférovanie, choď určite cez Sustenpass</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Ak by si mal navštíviť len jednu vec — choď na Oeschinensee (5. deň)</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Lanovky sú drahé, ale ušetria ti veľa času — premysli si, či sa ti to oplatí podľa tvojich plánov</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Choď cez prechody v Lichtenštajnsku a vyhni sa tak kontrolám</span></li>
+                </ul>
+            </div>
+
+            <p class="text-les-700 italic text-sm mt-8">Vždy budem stáť na strane zvierat, aj keby to malo byť proti ľuďom. – Pán Šeliem –</p>
+
+        </article>
+
+        <div class="mt-12 text-center">
+            <a href="blog" class="inline-block text-les-600 font-bold hover:text-les-900 transition-colors">
+                ← Späť na všetky články
+            </a>
+        </div>
+    </main>
+
+    <script src="./footer.js"></script>
+</body>
+</html>
