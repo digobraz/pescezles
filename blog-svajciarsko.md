@@ -38,7 +38,7 @@ BTW ešte pred Švajčiarskom odporúčam natankovať v Rakúsku do plna a vybav
 
 <!-- 📷 FOTO: Walensee, paddleboard, Klöntalersee -->
 
-📍 [Prejazd cez Lichtenštajnsko](https://maps.app.goo.gl/uLLn9Pcty6EqMsey9) · [Walensee](https://maps.app.goo.gl/3vVc6QtWP8dsYKYP7) · [Klöntalersee (to menšie)](https://www.google.com/maps/search/?api=1&query=Kl%C3%B6ntalersee)
+📍 [Prejazd cez Lichtenštajnsko](https://maps.app.goo.gl/uLLn9Pcty6EqMsey9) · [Walensee](https://maps.app.goo.gl/3vVc6QtWP8dsYKYP7) · [Klöntalersee](https://www.google.com/maps/search/?api=1&query=Kl%C3%B6ntalersee)
 
 ---
 
@@ -66,7 +66,7 @@ Nasledoval presun do mesta Lucern. Zaparkovali sme v nádhernom mestskom parku, 
 
 <!-- 📷 FOTO: tiesňava, hmla na Sustenpasse, Interlaken -->
 
-📍 [Tiesňava](https://maps.app.goo.gl/ESB7RS5UKvDHFqt66) · [Sustenpass](https://maps.app.goo.gl/YkCwHo5SF7g2UkZm6) · [Interlaken](https://www.google.com/maps/search/?api=1&query=Interlaken) · [Spot na spanie (Interlaken)](https://maps.app.goo.gl/8xdxJMntGjMaiNmv8)
+📍 [Tiesňava](https://maps.app.goo.gl/ESB7RS5UKvDHFqt66) · [Sustenpass](https://maps.app.goo.gl/YkCwHo5SF7g2UkZm6) · [Interlaken](https://www.google.com/maps/search/?api=1&query=Interlaken) · [Spot na spanie](https://maps.app.goo.gl/8xdxJMntGjMaiNmv8)
 
 ---
 
@@ -78,7 +78,7 @@ Po túre sme si dali národný pokrm, no spokojní sme neboli — prvé aj posle
 
 <!-- 📷 FOTO: Oeschinensee, túra okolo jazera -->
 
-📍 [Oeschinensee](https://maps.app.goo.gl/czJWQ3VtCZvU2tcp9)
+📍 [Oeschinensee](https://maps.app.goo.gl/czJWQ3VtCZvU2tcp9) · [Kemp Interlaken](https://maps.app.goo.gl/tTSKUKj7EF4ZAW616)
 
 ---
 
@@ -92,7 +92,7 @@ Tento plodný deň sme zakončili s Marošom a Markom pri brehu jazera Brienz, k
 
 <!-- 📷 FOTO: Thun/vodopád, Lauterbrunnen, Bachalpsee, Danny Li, opekačka Brienz -->
 
-📍 [Jazero Thun](https://www.google.com/maps/search/?api=1&query=Thunersee) · [Lauterbrunnen (údolie vodopádov)](https://www.google.com/maps/search/?api=1&query=Lauterbrunnen) · [Grindelwald](https://www.google.com/maps/search/?api=1&query=Grindelwald) · [Bachalpsee](https://maps.app.goo.gl/Dhth8yp445WV7xo16)
+📍 [Jazero Thun](https://www.google.com/maps/search/?api=1&query=Thunersee) · [Lauterbrunnen 🟠](https://www.google.com/maps/search/?api=1&query=Lauterbrunnen) · [Grindelwald](https://www.google.com/maps/search/?api=1&query=Grindelwald) · [Bachalpsee](https://maps.app.goo.gl/Dhth8yp445WV7xo16)
 
 ---
 
@@ -100,7 +100,7 @@ Tento plodný deň sme zakončili s Marošom a Markom pri brehu jazera Brienz, k
 
 Tento deň sme si to namierili spať k hraniciam, smer domov… Bola to dosť dlhá cesta z Interlakenu. Prechádzali sme cez dychberúci Sustenpass — prejazdy v 2 200 m n. m. Potom nasledovali trošku fádnejšie cesty k jazeru Caumasee, ale tam bolo toľko národa, že sa nikde nedalo zaparkovať. Keďže bol dosť úpek, chcel som Hektora patrične schladiť, a keďže nám nevyšlo jedno jazero, tak sme pokračovali až do Walensee, kde sme sa išli 2× schladiť. Tentoraz bolo jazero dosť rozbúrené a všade bolo veľa ľudí… Každopádne s Hektorom sme si to užili dosýta a tu vznikla myšlienka zostať ešte jednu noc navyše a ráno absolvovať poslednú švajčiarsku túru k jazeru Seealpsee (čo sme mali na checkliste). Našiel som skvelý FREE parking spot v apke Park4Night — v lese, za dedinou, kde sme si s Hektorom urobili krásny kľudný večer. Vychutnal som si rajčinovú polievku a v kľude pri Buddhovej flaute naplánoval rannú akciu.
 
-📍 [Caumasee](https://www.google.com/maps/search/?api=1&query=Caumasee) · [Walensee](https://maps.app.goo.gl/3vVc6QtWP8dsYKYP7) · [Nocľah pri dedinke Lienz](https://maps.app.goo.gl/nxQzjknuXqyuEzkm6?g_st=ic)
+📍 [Caumasee 🟠](https://www.google.com/maps/search/?api=1&query=Caumasee) · [Walensee](https://maps.app.goo.gl/3vVc6QtWP8dsYKYP7) · [Nocľah pri dedinke Lienz](https://maps.app.goo.gl/nxQzjknuXqyuEzkm6?g_st=ic)
 
 <!-- 📷 FOTO: Sustenpass, rozbúrené Walensee, free spot v lese -->
 
@@ -126,15 +126,37 @@ Inak všade, kde sme boli, boli psy vítané a sprevádzané úsmevmi ostatných
 
 ## Švajčiarsky prehľad — všetky miesta na mape
 
-⭐ = miesta, ktoré sme naplno nestihli, ale stoja za pozornosť.
+🟠 oranžová = preplnené miesto (choď skoro ráno alebo mimo sezóny).
 
-**Jazerá:** [Walensee](https://maps.app.goo.gl/3vVc6QtWP8dsYKYP7) · [Klöntalersee (to menšie)](https://www.google.com/maps/search/?api=1&query=Kl%C3%B6ntalersee) · [Oeschinensee](https://maps.app.goo.gl/czJWQ3VtCZvU2tcp9) · [Bachalpsee](https://maps.app.goo.gl/Dhth8yp445WV7xo16) · [Jazero Thun](https://www.google.com/maps/search/?api=1&query=Thunersee) · [Jazero Brienz](https://www.google.com/maps/search/?api=1&query=Brienzersee) · [Caumasee](https://www.google.com/maps/search/?api=1&query=Caumasee) · [Seealpsee](https://www.google.com/maps/search/?api=1&query=Seealpsee%20Wasserauen)
+**Jazerá:** [Walensee](https://maps.app.goo.gl/3vVc6QtWP8dsYKYP7) · [Klöntalersee](https://www.google.com/maps/search/?api=1&query=Kl%C3%B6ntalersee) · [Oeschinensee](https://maps.app.goo.gl/czJWQ3VtCZvU2tcp9) · [Bachalpsee](https://maps.app.goo.gl/Dhth8yp445WV7xo16) · [Jazero Thun](https://www.google.com/maps/search/?api=1&query=Thunersee) · [Jazero Brienz](https://www.google.com/maps/search/?api=1&query=Brienzersee) · [Caumasee 🟠](https://www.google.com/maps/search/?api=1&query=Caumasee) · [Seealpsee](https://www.google.com/maps/search/?api=1&query=Seealpsee%20Wasserauen)
 
-**Mestá a dediny:** [Lucern](https://www.google.com/maps/search/?api=1&query=Luzern) · [Interlaken](https://www.google.com/maps/search/?api=1&query=Interlaken) · [Lauterbrunnen](https://www.google.com/maps/search/?api=1&query=Lauterbrunnen) · [Grindelwald](https://www.google.com/maps/search/?api=1&query=Grindelwald) · [Stoos](https://www.google.com/maps/search/?api=1&query=Stoos%20Switzerland)
+**Mestá a dediny:** [Lucern](https://www.google.com/maps/search/?api=1&query=Luzern) · [Interlaken](https://www.google.com/maps/search/?api=1&query=Interlaken) · [Lauterbrunnen 🟠](https://www.google.com/maps/search/?api=1&query=Lauterbrunnen) · [Grindelwald](https://www.google.com/maps/search/?api=1&query=Grindelwald) · [Stoos](https://www.google.com/maps/search/?api=1&query=Stoos%20Switzerland)
 
-**Vodopády a priesmyky:** [Oltschibachfall ⭐](https://www.google.com/maps/search/?api=1&query=Oltschibachfall) · [Tiesňava](https://maps.app.goo.gl/ESB7RS5UKvDHFqt66) · [Sustenpass](https://maps.app.goo.gl/YkCwHo5SF7g2UkZm6) · [Socha leva – Löwendenkmal ⭐](https://www.google.com/maps/search/?api=1&query=L%C3%B6wendenkmal%20Luzern)
+**Vodopády a priesmyky:** [Oltschibachfall](https://www.google.com/maps/search/?api=1&query=Oltschibachfall) · [Tiesňava](https://maps.app.goo.gl/ESB7RS5UKvDHFqt66) · [Sustenpass](https://maps.app.goo.gl/YkCwHo5SF7g2UkZm6) · [Socha leva – Löwendenkmal](https://www.google.com/maps/search/?api=1&query=L%C3%B6wendenkmal%20Luzern)
 
-**Kde sme spali (zadarmo):** [Kemp Judenstein (AT)](https://maps.app.goo.gl/EWXjHcEx9WH2DKCT7) · [Klöntalersee](https://www.google.com/maps/search/?api=1&query=Kl%C3%B6ntalersee) · [Lucern (park/hotel)](https://maps.app.goo.gl/9QAGqryK6MBv8HmC9) · [Spot Interlaken](https://maps.app.goo.gl/8xdxJMntGjMaiNmv8) · [Free spot pri Lienz](https://maps.app.goo.gl/nxQzjknuXqyuEzkm6?g_st=ic)
+**Kde sme spali:** [Kemp Judenstein](https://maps.app.goo.gl/EWXjHcEx9WH2DKCT7) · [Klöntalersee](https://www.google.com/maps/search/?api=1&query=Kl%C3%B6ntalersee) · [Lucern – park/hotel](https://maps.app.goo.gl/9QAGqryK6MBv8HmC9) · [Spot Interlaken](https://maps.app.goo.gl/8xdxJMntGjMaiNmv8) · [Kemp Interlaken](https://maps.app.goo.gl/tTSKUKj7EF4ZAW616) · [Free spot pri Lienz](https://maps.app.goo.gl/nxQzjknuXqyuEzkm6?g_st=ic)
+
+---
+
+## Rozpočet — čo nás to celé stálo
+
+Orientačné sumy za celý pobyt na jednu osobu (+ pes + auto). ~90 % jedla sme kúpili doma na Slovensku.
+
+| Položka | Suma |
+|---|---|
+| Nocľahy celkom (len 1. a 5. deň) | 107 € |
+| Lanovky celkom (Stoos ~30 · Oeschinensee ~60 · Bachalpsee ~80) | ~170 € |
+| Nafta (Alhambra 1.9, celá cesta) | ~220 € |
+| Sladkosti, syry a sirupy domov | ~200 € |
+| Jedlo kúpené vo Švajčiarsku | do 100 € |
+| Reštaurácie celkom | 28 € |
+| Diaľničná známka Švajčiarsko (ročná) | 42 € |
+| Diaľničná známka Rakúsko (10-dňová) | 12 € |
+| eSIM (20 GB) | 22 € |
+| Parkovanie celkom (~1 €/hod) | do 20 € |
+| **Celá dovolenka** | **≈ 1 000 €** |
+
++ zásoby jedla nakúpené doma na Slovensku. Vo švajčiarskych potravinách sú ceny až na mäso podobné ako u nás.
 
 ---
 
@@ -144,6 +166,7 @@ Inak všade, kde sme boli, boli psy vítané a sprevádzané úsmevmi ostatných
 - ✅ Nezabudni na cestovné poistenie!
 - ✅ Maj platnú vakcináciu — besnota, nič VIAC nepotrebuješ, ak máš psa (možno zapísané odčervenie…), a nezabudni si pas pre istotu
 - ✅ Stiahni si offline Mapy.cz a aj Park4Night!
+- ✅ Stiahni si apku EasyPark — parkovné vybavíš z mobilu (~1 €/hod skoro všade)
 - ✅ Kúp, aktivuj a nastav si švajčiarsku eSIM-ku ešte v Rakúsku
 - ✅ Takisto tankuj v Rakúsku — najlepšie mimo diaľnice
 - ✅ Ak chceš nezabudnuteľný zážitok, absolvuj čarovnú stezku (3. deň)

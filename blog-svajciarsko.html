@@ -47,12 +47,24 @@
         .foto-ph span { font-size:.8rem; font-weight:600; letter-spacing:.02em; text-transform:uppercase; }
         /* Mapové tlačidlá */
         .map-btn { display:inline-flex; align-items:center; gap:.5rem; font-weight:600; font-size:.875rem;
-            padding:.5rem 1rem; border-radius:.75rem; background:#04221f; color:#fff; transition:background .2s; }
+            padding:.5rem 1rem; border-radius:.75rem; background:#04221f; color:#fff; transition:background .2s,border-color .2s,color .2s; }
         .map-btn:hover { background:#073f3a; }
+        .map-btn i { color:#f5ecd8; }
         .map-btn.light { background:#fff; color:#04221f; border:1px solid #e5d7ba; }
         .map-btn.light:hover { border-color:#0b6159; color:#dc2626; background:#fff; }
-        .map-btn i { color:#0b6159; }
-        .map-btn:not(.light) i { color:#f5ecd8; }
+        .map-btn.light i { color:#0b6159; }
+        /* Oranžová = preplnené miesto */
+        .map-btn.warn { color:#fbbf24; }
+        .map-btn.warn i { color:#fbbf24; }
+        .map-btn.light.warn { background:#fff; border-color:#f59e0b; color:#b45309; }
+        .map-btn.light.warn:hover { border-color:#d97706; color:#92400e; }
+        .map-btn.light.warn i { color:#f59e0b; }
+        /* Nocľah / rozpočet dňa */
+        .noc { display:inline-flex; align-items:center; gap:.6rem; background:#faf7f2; border:1px solid #e5d7ba;
+            border-radius:.75rem; padding:.5rem .9rem; font-size:.875rem; color:#05302c; }
+        .noc i { color:#0b6159; }
+        .noc .price { font-weight:800; color:#04221f; }
+        .noc .free { font-weight:800; color:#0b6159; }
     </style>
 </head>
 <body class="bg-pes-50 text-les-950 font-sans antialiased">
@@ -130,10 +142,11 @@
             <figure class="mb-6">
                 <div class="foto-ph"><i class="fa-solid fa-camera"></i><span>FOTO: Hallstatt · kemp Judenstein</span></div>
             </figure>
-            <div class="flex gap-3 mb-10 flex-wrap">
+            <div class="flex gap-3 mb-4 flex-wrap">
                 <a href="https://maps.app.goo.gl/EWXjHcEx9WH2DKCT7" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Kemp Judenstein</a>
                 <a href="https://maps.app.goo.gl/QgFbhZYHNiXqqjCs9" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Parkovisko Hallstatt</a>
             </div>
+            <div class="noc mb-10"><i class="fa-solid fa-bed"></i><span><strong>Nocľah:</strong> Kemp Judenstein</span><span class="price">65 €</span></div>
 
             <!-- 2. DEŇ -->
             <h2 class="text-3xl font-black text-les-950 mt-12 mb-6"><span class="text-les-500">2. deň ·</span> Prvý kontakt</h2>
@@ -151,11 +164,12 @@
                     Ešte pred Švajčiarskom ti odporúčam natankovať v Rakúsku do plna a vybaviť si eSIM-ku — ja som zvolil 20 GB za 20 eur… Trošku ma potrápilo nastavovanie eSIM na parkovisku, ale nakoniec sa mi to podarilo. Neviem, či je to bežné, ale nikto nás na hraniciach nezastavil, ani som žiadne hranice nepostrehol — možno preto, že sme išli prechodom, ktorý mi odporučil kamoš Maroš (vraj tam často nekontrolujú — a nekontrolovali nás ani na ceste späť).
                 </p>
             </div>
-            <div class="flex gap-3 mb-10 flex-wrap">
+            <div class="flex gap-3 mb-4 flex-wrap">
                 <a href="https://maps.app.goo.gl/uLLn9Pcty6EqMsey9" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Prejazd cez Lichtenštajnsko</a>
                 <a href="https://maps.app.goo.gl/3vVc6QtWP8dsYKYP7" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Walensee</a>
-                <a href="https://www.google.com/maps/search/?api=1&query=Kl%C3%B6ntalersee" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Klöntalersee (to menšie)</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Kl%C3%B6ntalersee" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Klöntalersee</a>
             </div>
+            <div class="noc mb-10"><i class="fa-solid fa-bed"></i><span><strong>Nocľah:</strong> Klöntalersee — na hulvátov</span><span class="free">0 €</span></div>
 
             <!-- 3. DEŇ -->
             <h2 class="text-3xl font-black text-les-950 mt-12 mb-6"><span class="text-les-500">3. deň ·</span> Rozprávková jazda</h2>
@@ -179,10 +193,11 @@
             <figure class="mb-6">
                 <div class="foto-ph"><i class="fa-solid fa-camera"></i><span>FOTO: čarovná cesta (32 km) · Stoos · Lucern</span></div>
             </figure>
-            <div class="flex gap-3 mb-10 flex-wrap">
+            <div class="flex gap-3 mb-4 flex-wrap">
                 <a href="https://maps.app.goo.gl/9QAGqryK6MBv8HmC9" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Mestský park Lucern</a>
-                <a href="https://www.google.com/maps/search/?api=1&query=L%C3%B6wendenkmal%20Luzern" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Socha leva (Löwendenkmal)</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=L%C3%B6wendenkmal%20Luzern" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Socha leva – Löwendenkmal</a>
             </div>
+            <div class="noc mb-10"><i class="fa-solid fa-bed"></i><span><strong>Nocľah:</strong> Parkovisko pri hoteli, Lucern</span><span class="free">0 €</span></div>
 
             <!-- 4. DEŇ -->
             <h2 class="text-3xl font-black text-les-950 mt-12 mb-6"><span class="text-les-500">4. deň ·</span> Hmlistá krása</h2>
@@ -192,12 +207,13 @@
             <figure class="mb-6">
                 <div class="foto-ph"><i class="fa-solid fa-camera"></i><span>FOTO: tiesňava · hmla na Sustenpasse · Interlaken</span></div>
             </figure>
-            <div class="flex gap-3 mb-10 flex-wrap">
+            <div class="flex gap-3 mb-4 flex-wrap">
                 <a href="https://maps.app.goo.gl/ESB7RS5UKvDHFqt66" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Tiesňava</a>
                 <a href="https://maps.app.goo.gl/YkCwHo5SF7g2UkZm6" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Sustenpass</a>
                 <a href="https://www.google.com/maps/search/?api=1&query=Interlaken" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Interlaken</a>
-                <a href="https://maps.app.goo.gl/8xdxJMntGjMaiNmv8" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-moon"></i>Spot na spanie (Interlaken)</a>
+                <a href="https://maps.app.goo.gl/8xdxJMntGjMaiNmv8" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-moon"></i>Spot na spanie</a>
             </div>
+            <div class="noc mb-10"><i class="fa-solid fa-bed"></i><span><strong>Nocľah:</strong> Spot nad Interlakenom (Marošov tip)</span><span class="free">0 €</span></div>
 
             <!-- 5. DEŇ -->
             <h2 class="text-3xl font-black text-les-950 mt-12 mb-6"><span class="text-les-500">5. deň ·</span> Švajčiarsky vrchol</h2>
@@ -210,9 +226,11 @@
             <figure class="mb-6">
                 <div class="foto-ph"><i class="fa-solid fa-camera"></i><span>FOTO: Oeschinensee · túra okolo jazera</span></div>
             </figure>
-            <div class="flex gap-3 mb-10 flex-wrap">
+            <div class="flex gap-3 mb-4 flex-wrap">
                 <a href="https://maps.app.goo.gl/czJWQ3VtCZvU2tcp9" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Oeschinensee</a>
+                <a href="https://maps.app.goo.gl/tTSKUKj7EF4ZAW616" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-campground"></i>Kemp Interlaken</a>
             </div>
+            <div class="noc mb-10"><i class="fa-solid fa-bed"></i><span><strong>Nocľah:</strong> Kemp Interlaken</span><span class="price">42 €</span><span class="text-les-600 text-xs">· 1 os. + pes + auto</span></div>
 
             <!-- 6. DEŇ -->
             <h2 class="text-3xl font-black text-les-950 mt-12 mb-6"><span class="text-les-500">6. deň ·</span> Stratené pádlo a prví čínski psi</h2>
@@ -229,23 +247,25 @@
             <figure class="mb-6">
                 <div class="foto-ph"><i class="fa-solid fa-camera"></i><span>FOTO: Thun / vodopád · Lauterbrunnen · Bachalpsee · Danny Li · opekačka Brienz</span></div>
             </figure>
-            <div class="flex gap-3 mb-10 flex-wrap">
+            <div class="flex gap-3 mb-4 flex-wrap">
                 <a href="https://www.google.com/maps/search/?api=1&query=Thunersee" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Jazero Thun</a>
-                <a href="https://www.google.com/maps/search/?api=1&query=Lauterbrunnen" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Lauterbrunnen (údolie vodopádov)</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Lauterbrunnen" target="_blank" rel="noopener" class="map-btn warn"><i class="fa-solid fa-location-dot"></i>Lauterbrunnen</a>
                 <a href="https://www.google.com/maps/search/?api=1&query=Grindelwald" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Grindelwald</a>
                 <a href="https://maps.app.goo.gl/Dhth8yp445WV7xo16" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Bachalpsee</a>
             </div>
+            <div class="noc mb-10"><i class="fa-solid fa-bed"></i><span><strong>Nocľah:</strong> Parkovisko pri Brienzi</span><span class="free">0 €</span></div>
 
             <!-- 7. DEŇ -->
             <h2 class="text-3xl font-black text-les-950 mt-12 mb-6"><span class="text-les-500">7. deň ·</span> Späť k hraniciam</h2>
             <p class="text-lg text-les-800 leading-relaxed mb-6">
                 Tento deň sme si to namierili spať k hraniciam, smer domov… Bola to dosť dlhá cesta z Interlakenu. Prechádzali sme cez dychberúci Sustenpass — prejazdy v 2 200 m n. m. Potom nasledovali trošku fádnejšie cesty k jazeru Caumasee, ale tam bolo toľko národa, že sa nikde nedalo zaparkovať. Keďže bol dosť úpek, chcel som Hektora patrične schladiť, a keďže nám nevyšlo jedno jazero, tak sme pokračovali až do Walensee, kde sme sa išli 2× schladiť. Tentoraz bolo jazero dosť rozbúrené a všade bolo veľa ľudí… Každopádne s Hektorom sme si to užili dosýta a tu vznikla myšlienka zostať ešte jednu noc navyše a ráno absolvovať poslednú švajčiarsku túru k jazeru Seealpsee (čo sme mali na checkliste). Našiel som skvelý FREE parking spot v apke Park4Night — v lese, za dedinou, kde sme si s Hektorom urobili krásny kľudný večer. Vychutnal som si rajčinovú polievku a v kľude pri Buddhovej flaute naplánoval rannú akciu.
             </p>
-            <div class="flex gap-3 mb-6 flex-wrap">
-                <a href="https://www.google.com/maps/search/?api=1&query=Caumasee" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Caumasee</a>
+            <div class="flex gap-3 mb-4 flex-wrap">
+                <a href="https://www.google.com/maps/search/?api=1&query=Caumasee" target="_blank" rel="noopener" class="map-btn warn"><i class="fa-solid fa-location-dot"></i>Caumasee</a>
                 <a href="https://maps.app.goo.gl/3vVc6QtWP8dsYKYP7" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Walensee</a>
                 <a href="https://maps.app.goo.gl/nxQzjknuXqyuEzkm6?g_st=ic" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-moon"></i>Nocľah pri dedinke Lienz</a>
             </div>
+            <div class="noc mb-6"><i class="fa-solid fa-bed"></i><span><strong>Nocľah:</strong> Free spot v lese pri Lienz</span><span class="free">0 €</span></div>
             <figure class="mb-10">
                 <div class="foto-ph"><i class="fa-solid fa-camera"></i><span>FOTO: Sustenpass · rozbúrené Walensee · free spot v lese</span></div>
             </figure>
@@ -258,9 +278,10 @@
             <figure class="mb-6">
                 <div class="foto-ph"><i class="fa-solid fa-camera"></i><span>FOTO: Seealpsee · Hektor aportovanie · cesta domov</span></div>
             </figure>
-            <div class="flex gap-3 mb-10 flex-wrap">
+            <div class="flex gap-3 mb-4 flex-wrap">
                 <a href="https://www.google.com/maps/search/?api=1&query=Seealpsee%20Wasserauen" target="_blank" rel="noopener" class="map-btn"><i class="fa-solid fa-location-dot"></i>Seealpsee — Wasserauen</a>
             </div>
+            <div class="noc mb-10"><i class="fa-solid fa-car-side"></i><span><strong>Nocľah:</strong> cesta domov (10 h)</span><span class="free">—</span></div>
 
             <!-- ZÁVER -->
             <h2 class="text-3xl font-black text-les-950 mt-12 mb-6">Záver</h2>
@@ -277,17 +298,17 @@
             <!-- ŠVAJČIARSKY PREHĽAD – všetky miesta na mape -->
             <div class="bg-pes-100 rounded-3xl p-8 md:p-10 mt-4">
                 <p class="flex items-center gap-3 text-2xl md:text-3xl font-black text-les-950 mb-2"><i class="fa-solid fa-map-location-dot text-cez-600"></i>Švajčiarsky prehľad</p>
-                <p class="text-les-700 mb-8">Všetky miesta z nášho putovania na jednom mieste — klikni a otvorí sa mapa. Hviezdička <i class="fa-solid fa-star text-cez-600 text-xs"></i> = miesta, ktoré sme naplno nestihli, ale stoja za pozornosť.</p>
+                <p class="text-les-700 mb-8">Všetky miesta z nášho putovania na jednom mieste — klikni a otvorí sa mapa. <span class="text-amber-600 font-semibold">Oranžová</span> = preplnené miesto (choď skoro ráno alebo mimo sezóny).</p>
 
                 <h3 class="text-sm font-black uppercase tracking-wider text-les-600 mb-3"><i class="fa-solid fa-water mr-2"></i>Jazerá</h3>
                 <div class="flex gap-3 mb-7 flex-wrap">
                     <a href="https://maps.app.goo.gl/3vVc6QtWP8dsYKYP7" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Walensee</a>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Kl%C3%B6ntalersee" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Klöntalersee (to menšie)</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Kl%C3%B6ntalersee" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Klöntalersee</a>
                     <a href="https://maps.app.goo.gl/czJWQ3VtCZvU2tcp9" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Oeschinensee</a>
                     <a href="https://maps.app.goo.gl/Dhth8yp445WV7xo16" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Bachalpsee</a>
                     <a href="https://www.google.com/maps/search/?api=1&query=Thunersee" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Jazero Thun</a>
                     <a href="https://www.google.com/maps/search/?api=1&query=Brienzersee" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Jazero Brienz</a>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Caumasee" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Caumasee</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Caumasee" target="_blank" rel="noopener" class="map-btn light warn"><i class="fa-solid fa-location-dot"></i>Caumasee</a>
                     <a href="https://www.google.com/maps/search/?api=1&query=Seealpsee%20Wasserauen" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Seealpsee</a>
                 </div>
 
@@ -295,27 +316,51 @@
                 <div class="flex gap-3 mb-7 flex-wrap">
                     <a href="https://www.google.com/maps/search/?api=1&query=Luzern" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Lucern</a>
                     <a href="https://www.google.com/maps/search/?api=1&query=Interlaken" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Interlaken</a>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Lauterbrunnen" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Lauterbrunnen</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Lauterbrunnen" target="_blank" rel="noopener" class="map-btn light warn"><i class="fa-solid fa-location-dot"></i>Lauterbrunnen</a>
                     <a href="https://www.google.com/maps/search/?api=1&query=Grindelwald" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Grindelwald</a>
                     <a href="https://www.google.com/maps/search/?api=1&query=Stoos%20Switzerland" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Stoos</a>
                 </div>
 
                 <h3 class="text-sm font-black uppercase tracking-wider text-les-600 mb-3"><i class="fa-solid fa-mountain mr-2"></i>Vodopády a priesmyky</h3>
                 <div class="flex gap-3 mb-7 flex-wrap">
-                    <a href="https://www.google.com/maps/search/?api=1&query=Oltschibachfall" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-star text-cez-600"></i>Oltschibachfall</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Oltschibachfall" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Oltschibachfall</a>
                     <a href="https://maps.app.goo.gl/ESB7RS5UKvDHFqt66" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Tiesňava</a>
                     <a href="https://maps.app.goo.gl/YkCwHo5SF7g2UkZm6" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Sustenpass</a>
-                    <a href="https://www.google.com/maps/search/?api=1&query=L%C3%B6wendenkmal%20Luzern" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-star text-cez-600"></i>Socha leva (Löwendenkmal)</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=L%C3%B6wendenkmal%20Luzern" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-location-dot"></i>Socha leva – Löwendenkmal</a>
                 </div>
 
-                <h3 class="text-sm font-black uppercase tracking-wider text-les-600 mb-3"><i class="fa-solid fa-moon mr-2"></i>Kde sme spali (zadarmo)</h3>
+                <h3 class="text-sm font-black uppercase tracking-wider text-les-600 mb-3"><i class="fa-solid fa-moon mr-2"></i>Kde sme spali</h3>
                 <div class="flex gap-3 flex-wrap">
-                    <a href="https://maps.app.goo.gl/EWXjHcEx9WH2DKCT7" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-campground"></i>Kemp Judenstein (AT)</a>
+                    <a href="https://maps.app.goo.gl/EWXjHcEx9WH2DKCT7" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-campground"></i>Kemp Judenstein</a>
                     <a href="https://www.google.com/maps/search/?api=1&query=Kl%C3%B6ntalersee" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-campground"></i>Klöntalersee</a>
-                    <a href="https://maps.app.goo.gl/9QAGqryK6MBv8HmC9" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-campground"></i>Lucern (park/hotel)</a>
+                    <a href="https://maps.app.goo.gl/9QAGqryK6MBv8HmC9" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-campground"></i>Lucern – park/hotel</a>
                     <a href="https://maps.app.goo.gl/8xdxJMntGjMaiNmv8" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-campground"></i>Spot Interlaken</a>
+                    <a href="https://maps.app.goo.gl/tTSKUKj7EF4ZAW616" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-campground"></i>Kemp Interlaken</a>
                     <a href="https://maps.app.goo.gl/nxQzjknuXqyuEzkm6?g_st=ic" target="_blank" rel="noopener" class="map-btn light"><i class="fa-solid fa-campground"></i>Free spot pri Lienz</a>
                 </div>
+            </div>
+
+            <!-- ROZPOČET -->
+            <div class="bg-white border-2 border-pes-200 rounded-3xl p-8 md:p-10 mt-8">
+                <p class="flex items-center gap-3 text-2xl md:text-3xl font-black text-les-950 mb-2"><i class="fa-solid fa-wallet text-cez-600"></i>Rozpočet — čo nás to celé stálo</p>
+                <p class="text-les-700 mb-6">Orientačné sumy za celý pobyt na jednu osobu (+ pes + auto). Väčšinu jedla (~90 %) sme kúpili doma na Slovensku, takže vo Švajčiarsku sme míňali minimum.</p>
+                <div class="divide-y divide-pes-100">
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-bed text-les-500 mr-2 w-5 text-center"></i>Nocľahy celkom <span class="text-les-600 text-sm">— len 1. a 5. deň, zvyšok zadarmo</span></span><span class="font-black text-les-950 whitespace-nowrap">107 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-cable-car text-les-500 mr-2 w-5 text-center"></i>Lanovky celkom <span class="text-les-600 text-sm">— Stoos ~30 · Oeschinensee ~60 · Bachalpsee ~80</span></span><span class="font-black text-les-950 whitespace-nowrap">~170 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-gas-pump text-les-500 mr-2 w-5 text-center"></i>Nafta <span class="text-les-600 text-sm">— Alhambra 1.9, celá cesta</span></span><span class="font-black text-les-950 whitespace-nowrap">~220 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-basket-shopping text-les-500 mr-2 w-5 text-center"></i>Sladkosti, syry a sirupy domov</span><span class="font-black text-les-950 whitespace-nowrap">~200 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-cart-shopping text-les-500 mr-2 w-5 text-center"></i>Jedlo kúpené vo Švajčiarsku</span><span class="font-black text-les-950 whitespace-nowrap">do 100 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-utensils text-les-500 mr-2 w-5 text-center"></i>Reštaurácie celkom</span><span class="font-black text-les-950 whitespace-nowrap">28 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-road text-les-500 mr-2 w-5 text-center"></i>Diaľničná známka Švajčiarsko <span class="text-les-600 text-sm">— ročná</span></span><span class="font-black text-les-950 whitespace-nowrap">42 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-road text-les-500 mr-2 w-5 text-center"></i>Diaľničná známka Rakúsko <span class="text-les-600 text-sm">— 10-dňová</span></span><span class="font-black text-les-950 whitespace-nowrap">12 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-sim-card text-les-500 mr-2 w-5 text-center"></i>eSIM <span class="text-les-600 text-sm">— 20 GB</span></span><span class="font-black text-les-950 whitespace-nowrap">22 €</span></div>
+                    <div class="flex justify-between items-baseline py-3 gap-4"><span class="text-les-800"><i class="fa-solid fa-square-parking text-les-500 mr-2 w-5 text-center"></i>Parkovanie celkom <span class="text-les-600 text-sm">— ~1 €/hod skoro všade</span></span><span class="font-black text-les-950 whitespace-nowrap">do 20 €</span></div>
+                </div>
+                <div class="flex justify-between items-baseline mt-6 pt-5 border-t-2 border-les-950 gap-4">
+                    <span class="text-les-950 font-black text-lg">Celá dovolenka</span>
+                    <span class="font-black text-cez-600 text-2xl whitespace-nowrap">≈ 1 000 €</span>
+                </div>
+                <p class="text-les-600 text-sm mt-4 m-0">+ zásoby jedla nakúpené doma na Slovensku (~90 % stravy). Vo švajčiarskych potravinách sú ceny až na mäso podobné ako u nás — v akcii nakúpiš kvalitnejšie veci za super ceny.</p>
             </div>
 
             <!-- CHECKLIST bublina -->
@@ -326,6 +371,7 @@
                     <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Nezabudni na cestovné poistenie!</span></li>
                     <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Maj platnú vakcináciu — besnota, nič <strong>VIAC</strong> nepotrebuješ, ak máš psa (možno zapísané odčervenie…), a nezabudni si pas pre istotu</span></li>
                     <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Stiahni si offline Mapy.cz a aj Park4Night!</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Stiahni si apku <strong>EasyPark</strong> — parkovné vybavíš z mobilu (~1 €/hod skoro všade)</span></li>
                     <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Kúp, aktivuj a nastav si švajčiarsku eSIM-ku ešte v Rakúsku</span></li>
                     <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Takisto tankuj v Rakúsku — najlepšie mimo diaľnice</span></li>
                     <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-les-500 mt-1"></i><span class="text-pes-100 leading-relaxed">Ak chceš nezabudnuteľný zážitok, absolvuj čarovnú cestu (3. deň)</span></li>
