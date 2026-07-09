@@ -4,13 +4,13 @@ Options -Indexes
 RewriteEngine On
 
 # Blog články – nové URL /blog/slug
-RewriteRule ^blog/svajciarsko-so-psom-low-budget-road-trip/?$ /blog-svajciarsko.html [L]
-RewriteRule ^blog/blog-mnaucin/?$ /blog-mnaucin.html [L]
-RewriteRule ^blog/kauza-fifinka-vrazedna-turistika-a-zlyhanie-statu/?$ /blog-fifinka.html [L]
+RewriteRule ^blog/svajciarsko-so-psom-low-budget-road-trip/?$ /BLOG/SWISS/blog-svajciarsko.html [L]
+RewriteRule ^blog/blog-mnaucin/?$ /BLOG/old-web/blog-mnaucin.html [L]
+RewriteRule ^blog/kauza-fifinka-vrazedna-turistika-a-zlyhanie-statu/?$ /BLOG/old-web/blog-fifinka.html [L]
 RewriteRule ^blog/cesta-snp-so-psom-pociatok-1-cast/?$ /blog-snp-pociatok.html [L]
-RewriteRule ^blog/cesta-snp-so-psom-priprava-2-cast/?$ /blog-snp-priprava.html [L]
-RewriteRule ^blog/cesta-snp-so-psom-vybava-3-cast/?$ /blog-snp-vybava.html [L]
-RewriteRule ^blog/ako-sa-ochranit-psa-pred-kliestami-zazracna-tabletka-neexistuje/?$ /blog-klieste.html [L]
+RewriteRule ^blog/cesta-snp-so-psom-priprava-2-cast/?$ /BLOG/old-web/blog-snp-priprava.html [L]
+RewriteRule ^blog/cesta-snp-so-psom-vybava-3-cast/?$ /BLOG/old-web/blog-snp-vybava.html [L]
+RewriteRule ^blog/ako-sa-ochranit-psa-pred-kliestami-zazracna-tabletka-neexistuje/?$ /BLOG/old-web/blog-klieste.html [L]
 
 # Výlety – nové URL /vylety/slug
 RewriteRule ^vylety/tajna-rajska-zahrada/?$ /vylet-rajska-zahrada.html [L]

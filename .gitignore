@@ -2,3 +2,7 @@
 .DS_Store
 .vscode/
 FOTO/.DS_Store
+
+# HEIC originály – nedeployovať (na webe len webp)
+BLOG/SWISS/foto/*.HEIC
+BLOG/SWISS/foto/*.JPG
