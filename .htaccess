@@ -4,6 +4,7 @@ Options -Indexes
 RewriteEngine On
 
 # Blog články – nové URL /blog/slug
+RewriteRule ^blog/svajciarsko-so-psom-low-budget-road-trip/?$ /blog-svajciarsko.html [L]
 RewriteRule ^blog/blog-mnaucin/?$ /blog-mnaucin.html [L]
 RewriteRule ^blog/kauza-fifinka-vrazedna-turistika-a-zlyhanie-statu/?$ /blog-fifinka.html [L]
 RewriteRule ^blog/cesta-snp-so-psom-pociatok-1-cast/?$ /blog-snp-pociatok.html [L]
