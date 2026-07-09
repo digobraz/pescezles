@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.pescezles.sk/</loc><priority>1.0</priority></url>
-  <url><loc>https://www.pescezles.sk/blog.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.pescezles.sk/vylety.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.pescezles.sk/misia.html</loc><priority>0.7</priority></url>
-  <url><loc>https://www.pescezles.sk/kniha.html</loc><priority>0.7</priority></url>
-  <url><loc>https://www.pescezles.sk/blog-mnaucin.html</loc><priority>0.6</priority></url>
-  <url><loc>https://www.pescezles.sk/blog-fifinka.html</loc><priority>0.6</priority></url>
-  <url><loc>https://www.pescezles.sk/blog-klieste.html</loc><priority>0.6</priority></url>
-  <url><loc>https://www.pescezles.sk/blog-snp-pociatok.html</loc><priority>0.6</priority></url>
-  <url><loc>https://www.pescezles.sk/blog-snp-priprava.html</loc><priority>0.6</priority></url>
-  <url><loc>https://www.pescezles.sk/blog-snp-vybava.html</loc><priority>0.6</priority></url>
-  <url><loc>https://www.pescezles.sk/vylet-rajska-zahrada.html</loc><priority>0.6</priority></url>
-  <url><loc>https://www.pescezles.sk/vylet-majdan.html</loc><priority>0.6</priority></url>
-  <url><loc>https://www.pescezles.sk/vylet-prekazka.html</loc><priority>0.6</priority></url>
+  <url><loc>https://www.pescezles.sk/blog</loc><priority>0.8</priority></url>
+  <url><loc>https://www.pescezles.sk/vylety</loc><priority>0.8</priority></url>
+  <url><loc>https://www.pescezles.sk/misia</loc><priority>0.7</priority></url>
+  <url><loc>https://www.pescezles.sk/kniha</loc><priority>0.7</priority></url>
+  <url><loc>https://www.pescezles.sk/blog/svajciarsko-so-psom-low-budget-road-trip</loc><lastmod>2026-07-09</lastmod><priority>0.9</priority></url>
+  <url><loc>https://www.pescezles.sk/blog/blog-mnaucin</loc><priority>0.6</priority></url>
+  <url><loc>https://www.pescezles.sk/blog/kauza-fifinka-vrazedna-turistika-a-zlyhanie-statu</loc><priority>0.6</priority></url>
+  <url><loc>https://www.pescezles.sk/blog/ako-sa-ochranit-psa-pred-kliestami-zazracna-tabletka-neexistuje</loc><priority>0.6</priority></url>
+  <url><loc>https://www.pescezles.sk/blog/cesta-snp-so-psom-pociatok-1-cast</loc><priority>0.6</priority></url>
+  <url><loc>https://www.pescezles.sk/blog/cesta-snp-so-psom-priprava-2-cast</loc><priority>0.6</priority></url>
+  <url><loc>https://www.pescezles.sk/blog/cesta-snp-so-psom-vybava-3-cast</loc><priority>0.6</priority></url>
+  <url><loc>https://www.pescezles.sk/vylety/tajna-rajska-zahrada</loc><priority>0.6</priority></url>
+  <url><loc>https://www.pescezles.sk/vylety/majdan-okruh-horne-oresany</loc><priority>0.6</priority></url>
+  <url><loc>https://www.pescezles.sk/vylety/prekazka</loc><priority>0.6</priority></url>
 </urlset>
