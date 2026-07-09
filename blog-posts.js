@@ -20,7 +20,7 @@
             img: '/BLOG/SWISS/foto/webp/titulka.webp',
             category: 'Road Trip',
             listTag: 'BLOG · ROAD TRIP',
-            title: 'Švajčiarsko na vlastnú päsť (so psom)',
+            title: 'Švajčiarsko so psom – low budget road trip',
             excerpt: '8 dní, vyše 2000 km a rozpočet do tisícky. Ako prejsť najdrahšiu krajinu Európy takmer zadarmo — trasa, jazerá, ceny a tipy.',
             badge: 'Novinka'
         },
@@ -37,7 +37,7 @@
             img: './images/kauza-fifinka-thumbnail.png',
             imgFallback: './FOTO/fifinka.png',
             category: 'Osveta',
-            title: 'KAUZA FIFINKA. Vražedná turistika a zlyhanie štátu',
+            title: 'Kauza Fifinka: Vražedná turistika a zlyhanie štátu',
             excerpt: 'Prípad turistov vs štát a kruté podmienky v ktorých psy niekedy musia prežívať.'
         },
         {
@@ -52,21 +52,21 @@
             url: 'blog/cesta-snp-so-psom-vybava-3-cast',
             img: './images/Cesta-SNP-so-psom-2022-vybava-pescezles.sk_-600x400.jpg',
             category: 'Cesta SNP',
-            title: 'Cesta SNP so psom - Výbava (3.časť)',
+            title: 'Cesta SNP so psom – Výbava (3. časť)',
             excerpt: 'Zážitky z putovania Cestou SNP. Naša životná výzva a odhodlanie.'
         },
         {
             url: 'blog/cesta-snp-so-psom-priprava-2-cast',
             img: './images/Cesta-SNP-so-psom-Priprava-2.cast-Nahladovy-obrazok-Pescezles-768x512.jpg',
             category: 'Cesta SNP',
-            title: 'Cesta SNP so psom - Príprava (2.časť)',
+            title: 'Cesta SNP so psom – Príprava (2. časť)',
             excerpt: 'Ako sa pripraviť na najväčšie turistické dobrodružstvo Slovenska s najlepším chlpatým kamošom.'
         },
         {
             url: 'blog/cesta-snp-so-psom-pociatok-1-cast',
             img: './images/Cesta-SNP-so-psom-pociatok-titulna-foto-pescezles.sk--600x400.jpg',
             category: 'Cesta SNP',
-            title: 'Cesta SNP so psom - Počiatok (1.časť)',
+            title: 'Cesta SNP so psom – Počiatok (1. časť)',
             excerpt: 'Keď sme prvýkrát spravili ten rozhodujúci krok. História sa začala písať.'
         }
     ];
